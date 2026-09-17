@@ -1,0 +1,66 @@
+{%- if page.head_title -%}
+  {%- assign titulo_head = page.head_title -%}
+{%- else -%}
+  {%- assign base = page.title_seo | default: page.title -%}
+  {%- assign titulo_head = base | append: " | " | append: site.title -%}
+{%- endif -%}
+{%- assign descripcion = page.description | default: site.description | strip_html | strip -%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ titulo_head }}</title>
+<meta name="description" content="{{ descripcion }}">
+{%- if page.noindex %}
+<meta name="robots" content="noindex">
+{%- else %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- endif %}
+<meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta property="og:title" content="{{ page.og_title | default: titulo_head }}">
+<meta property="og:description" content="{{ page.og_description | default: descripcion }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ page.image | absolute_url }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F1E3D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='20' fill='%230F1E3D'/%3E%3Crect x='14' y='22' width='22' height='52' rx='4' fill='%23FC5E46'/%3E%3Crect x='37' y='22' width='22' height='52' rx='4' fill='%237AF2E9'/%3E%3Crect x='60' y='22' width='22' height='52' rx='4' fill='%23FECC32'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="/img/marca/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+{%- if page.preload %}
+<link rel="preload" as="image" href="{{ page.preload }}">
+{%- endif %}
+{%- if page.schema_agencia %}
+{% include schema-agencia.html %}
+{%- endif %}
+{%- if page.url != "/" and page.noindex != true %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Inicio","item":"{{ '/' | absolute_url }}"}
+{%- for m in page.migas %},
+{"@type":"ListItem","position":{{ forloop.index | plus: 1 }},"name":{{ m.titulo | jsonify }},"item":"{{ m.url | absolute_url }}"}
+{%- endfor %},
+{"@type":"ListItem","position":{{ page.migas.size | plus: 2 }},"name":{{ page.miga | default: page.title | jsonify }},"item":"{{ page.url | absolute_url }}"}
+]}
+</script>
+{%- endif %}
+{%- if page.collection == "posts" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ descripcion | jsonify }},
+  "image": "{{ page.image | absolute_url }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "inLanguage": "es",
+  "mainEntityOfPage": "{{ page.url | absolute_url }}",
+  "articleSection": {{ site.data.categorias[page.categoria].nombre | jsonify }},
+  "author": {"@type": "Organization", "name": "{{ site.title }}"},
+  "publisher": {"@type": "TravelAgency", "@id": "{{ '/#agencia' | absolute_url }}", "name": "{{ site.title }}",
+    "logo": {"@type": "ImageObject", "url": "{{ '/img/marca/logo-viajes-parque.webp' | absolute_url }}"}}
+}
+</script>
+{%- endif %}

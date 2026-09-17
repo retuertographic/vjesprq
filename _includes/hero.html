@@ -1,0 +1,23 @@
+{%- assign h = page.hero -%}
+<section class="page-hero{% unless h.imagen %} simple{% endunless %}">
+  <div class="wrap">
+    <div>
+      {%- unless page.sin_migas %}
+      {% include migas.html %}
+      {%- endunless %}
+      {%- if h.eyebrow_url %}
+      <a class="eyebrow light" href="{{ h.eyebrow_url }}">{{ h.eyebrow }}</a>
+      {%- else %}
+      <span class="eyebrow light">{{ h.eyebrow }}</span>
+      {%- endif %}
+      <h1>{{ page.title }}</h1>
+      <p>{{ h.texto }}</p>
+      {%- if h.meta %}
+      <p class="post-meta">{{ h.meta }}</p>
+      {%- endif %}
+    </div>
+    {%- if h.imagen %}
+    <div class="ph-img"><img src="{{ h.imagen }}" alt="{{ h.alt }}"></div>
+    {%- endif %}
+  </div>
+</section>

@@ -1,0 +1,79 @@
+# Las seis experiencias de /experiencias/particulares/
+- id: a-tu-manera
+  titulo: A tu manera
+  clasico: Paquetes personalizados
+  icono: compass
+  color: coral
+  imagen: /img/destinos/kyoto.webp
+  alt: Calle tradicional de Kioto al amanecer
+  resumen: Nada de elegir entre el paquete A y el paquete B.
+  texto: Nada de elegir entre el paquete A y el paquete B. Partimos de lo que te apetece —playa, ciudad, naturaleza, gastronomía, o todo junto— y montamos el viaje a tu ritmo y a tu presupuesto.
+  puntos:
+    - Itinerario diseñado contigo, pieza a pieza.
+    - Vuelos, alojamiento, traslados y actividades en una sola reserva.
+    - Ajustes hasta que el viaje sea exactamente el tuyo.
+- id: vuelos-y-hoteles
+  titulo: Vuela y aterriza en buenas manos
+  clasico: Vuelos y hoteles
+  icono: plane
+  color: aqua
+  imagen: /img/fotos/avion-pista.webp
+  alt: Avión en pista preparado para embarcar
+  resumen: Las mejores combinaciones de vuelos desde Tenerife y alojamientos que merecen la pena.
+  texto: Buscamos las mejores combinaciones de vuelos desde Tenerife y alojamientos que merecen la pena, con acceso a las tarifas de una gran red de agencias. Tú eliges; nosotros comparamos.
+  puntos:
+    - Conexiones desde Tenerife Norte y Tenerife Sur.
+    - Hoteles revisados, no solo bien puntuados.
+    - Cambios e incidencias gestionados por nosotros.
+- id: tours-guiados
+  titulo: Con quien sabe y por dónde
+  clasico: Tours guiados
+  icono: map
+  color: yellow
+  imagen: /img/fotos/tour-guiado.webp
+  alt: Guía turística explicando un monumento a un grupo
+  resumen: Circuitos y visitas con guías que conocen el terreno.
+  texto: Circuitos y visitas con guías que conocen el terreno, para ver lo importante sin perder tiempo y entender lo que estás viendo.
+  puntos:
+    - Circuitos en grupo o visitas privadas.
+    - Guías en español siempre que el destino lo permite.
+    - Combinables con días libres por tu cuenta.
+- id: asesoria-de-viaje
+  titulo: Te lo explicamos antes de ir
+  clasico: Asesoría de viaje
+  icono: chat
+  color: navy
+  imagen: /img/fotos/tarjeta-embarque.webp
+  alt: Viajero con pasaporte y tarjeta de embarque
+  resumen: Documentación, visados, clima, seguro… te lo contamos con calma y por escrito.
+  texto: Documentación, visados, vacunas recomendadas, clima, enchufes, propinas, seguro de viaje… Te lo contamos con calma y por escrito, para que salgas de casa sin dudas.
+  puntos:
+    - Requisitos de entrada y documentación al día.
+    - Recomendaciones prácticas para cada destino.
+    - Seguro de viaje adaptado a tu plan.
+- id: luna-de-miel
+  titulo: El viaje que no se olvida
+  clasico: Luna de miel
+  icono: heart
+  color: coral
+  imagen: /img/fotos/luna-de-miel.webp
+  alt: Pareja de recién casados al atardecer junto al mar
+  resumen: Lunas de miel y viajes románticos preparados con el mimo que merecen.
+  texto: "Planificamos lunas de miel y viajes románticos con el mimo que merecen: el destino, los tiempos, los detalles y esas sorpresas que se preparan con antelación."
+  puntos:
+    - Destinos de playa, aventura o combinados.
+    - Organización pensada para no estresaros antes de la boda.
+    - Detalles especiales en alojamientos seleccionados.
+- id: cruceros
+  titulo: A flote, sin sustos
+  clasico: Cruceros
+  icono: ship
+  color: aqua
+  imagen: /img/destinos/crucero.webp
+  alt: Crucero atracado en puerto al atardecer
+  resumen: Naviera, barco, itinerario y camarote elegidos contigo.
+  texto: Te ayudamos a elegir naviera, barco, itinerario y camarote según cómo te gusta viajar, y nos ocupamos de vuelos, traslados y excursiones para que solo tengas que embarcar.
+  puntos:
+    - Mediterráneo, norte de Europa, Caribe, islas atlánticas y más.
+    - Comparamos navieras y tipos de camarote contigo.
+    - Salidas y escalas cercanas a Canarias cuando las hay.

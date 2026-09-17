@@ -1,10 +1,11 @@
-/* Comportamiento compartido: carga header/footer, menú móvil, scroll, animaciones y compartir. */
+/* Comportamiento compartido: menú móvil, cabecera al hacer scroll, animaciones, filtros y compartir.
+   La cabecera, el pie y el <head> los genera Jekyll (carpeta _includes). */
 
 /* Banner de cookies (Biscotti CMP). Rellenar el ID cuando se dé de alta el sitio en Biscotti.
    Mientras la web no use cookies de analítica ni publicidad, puede quedarse vacío. */
 const BISCOTTI_WEBSITE_ID = '';
 
-(async function () {
+(function () {
   if (BISCOTTI_WEBSITE_ID) {
     window.BiscottiConfig = { websiteId: BISCOTTI_WEBSITE_ID, apiUrl: 'https://api.biscotti-cmp.com/api/v1' };
     ['biscotti-boot.js', 'biscotti.min.js'].forEach(f => {
@@ -14,32 +15,6 @@ const BISCOTTI_WEBSITE_ID = '';
       document.head.appendChild(s);
     });
   }
-
-  async function injectPartial(slotId, file) {
-    const slot = document.getElementById(slotId);
-    if (!slot) return;
-    try {
-      const res = await fetch(file, { cache: 'no-cache' });
-      slot.outerHTML = await res.text();
-    } catch (err) {
-      console.error('No se pudo cargar ' + file, err);
-    }
-  }
-
-  await Promise.all([
-    injectPartial('site-header-slot', '/partials/header.html'),
-    injectPartial('site-footer-slot', '/partials/footer.html'),
-  ]);
-
-  const year = document.getElementById('year');
-  if (year) year.textContent = new Date().getFullYear();
-
-  /* Marca la sección activa en el menú */
-  const path = location.pathname.replace(/index\.html$/, '');
-  document.querySelectorAll('#navLinks a').forEach(a => {
-    const href = a.getAttribute('href');
-    if (href === '/' ? path === '/' : path.startsWith(href)) a.setAttribute('aria-current', 'page');
-  });
 
   const header = document.getElementById('site-header');
   const toTop = document.getElementById('toTop');
@@ -73,23 +48,49 @@ const BISCOTTI_WEBSITE_ID = '';
   const io = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
     entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
   }, { rootMargin: '0px 0px -8% 0px' }) : null;
-  window.VPReveal = root => (root || document).querySelectorAll('.reveal:not(.in)').forEach(el => io ? io.observe(el) : el.classList.add('in'));
-  window.VPReveal();
+  document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
 
   /* Tarjetas enteras clicables sin anidar enlaces */
   document.addEventListener('click', e => {
     const card = e.target.closest('[data-href]');
     if (card && !e.target.closest('a,button')) location.href = card.dataset.href;
   });
-})();
 
-/* Botones para compartir artículos */
-window.VPShare = {
-  render(containerId, url, title) {
-    const el = document.getElementById(containerId);
-    if (!el) return;
-    const u = encodeURIComponent(url);
-    const t = encodeURIComponent(title);
+  /* Filtros (destinos por continente, diario por categoría).
+     <div data-filtro="continente" data-lista="#destGrid"> con botones data-valor; los elementos de la lista llevan data-valor. */
+  document.querySelectorAll('[data-filtro]').forEach(bar => {
+    const param = bar.dataset.filtro;
+    const list = document.querySelector(bar.dataset.lista);
+    const items = [...list.querySelectorAll('[data-valor]')];
+    const empty = list.querySelector('.empty');
+    const live = bar.parentElement.querySelector('[aria-live]');
+    const valid = [...bar.querySelectorAll('button')].map(b => b.dataset.valor);
+    function select(val) {
+      bar.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.valor === val)));
+      let n = 0;
+      items.forEach(it => {
+        const show = !val || it.dataset.valor === val;
+        it.hidden = !show;
+        if (show) { n++; it.classList.add('in'); }
+      });
+      if (empty) empty.hidden = n > 0;
+      if (live) live.textContent = n + ' resultados';
+    }
+    bar.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      history.replaceState(null, '', b.dataset.valor ? `?${param}=${b.dataset.valor}` : location.pathname);
+      select(b.dataset.valor);
+    });
+    const initial = new URLSearchParams(location.search).get(param);
+    if (initial && valid.includes(initial)) select(initial);
+    else if (empty) empty.hidden = true;
+  });
+
+  /* Botones para compartir artículos */
+  const shareEl = document.querySelector('[data-compartir]');
+  if (shareEl) {
+    const u = encodeURIComponent(shareEl.dataset.compartir);
+    const t = encodeURIComponent(shareEl.dataset.titulo);
     const icons = {
       whatsapp: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14 3.5 13 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/><path d="M17.1 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2.1-.2-.5-.5-.5-.6-.5h-.6c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.4z"/></svg>',
       facebook: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7C18.3 21.1 22 17 22 12z"/></svg>',
@@ -101,16 +102,16 @@ window.VPShare = {
       { href: `https://www.facebook.com/sharer/sharer.php?u=${u}`, label: 'Compartir en Facebook', icon: icons.facebook },
       { href: `https://www.linkedin.com/sharing/share-offsite/?url=${u}`, label: 'Compartir en LinkedIn', icon: icons.linkedin },
     ];
-    el.innerHTML = links.map(l =>
+    shareEl.innerHTML = links.map(l =>
       `<a href="${l.href}" target="_blank" rel="noopener noreferrer" aria-label="${l.label}">${l.icon}</a>`
     ).join('') + `<button type="button" class="share-copy" aria-label="Copiar enlace">${icons.link}</button>`;
-    const copyBtn = el.querySelector('.share-copy');
+    const copyBtn = shareEl.querySelector('.share-copy');
     copyBtn.addEventListener('click', async () => {
       try {
-        await navigator.clipboard.writeText(url);
+        await navigator.clipboard.writeText(shareEl.dataset.compartir);
         copyBtn.classList.add('copied');
         setTimeout(() => copyBtn.classList.remove('copied'), 1800);
       } catch (e) { /* sin portapapeles: no pasa nada */ }
     });
   }
-};
+})();

@@ -1,0 +1,13 @@
+- titulo: Inicio
+  url: /
+- titulo: Quiénes te acompañamos
+  url: /quienes-te-acompanamos/
+- titulo: Experiencias
+  url: /experiencias/
+- titulo: Destinos
+  url: /destinos/
+- titulo: Diario de viaje
+  url: /diario-de-viaje/
+- titulo: Hablamos
+  url: /hablamos/
+  boton: true

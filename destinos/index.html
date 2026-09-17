@@ -1,314 +1,44 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Destinos desde Tenerife por continente | Viajes Parque</title>
-<meta name="description" content="Ideas de viaje desde Tenerife por continente: Santorini, Japón, Bali, Maldivas, Perú, Nueva York, Tanzania y más, con propuesta a tu medida.">
-<link rel="canonical" href="https://www.viajesparque.com/destinos/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Viajes Parque">
-<meta property="og:locale" content="es_ES">
-<meta property="og:title" content="Destinos desde Tenerife por continente | Viajes Parque">
-<meta property="og:description" content="Ideas de viaje desde Tenerife por continente: Santorini, Japón, Bali, Maldivas, Perú, Nueva York, Tanzania y más, con propuesta a tu medida.">
-<meta property="og:url" content="https://www.viajesparque.com/destinos/">
-<meta property="og:image" content="https://www.viajesparque.com/img/destinos/santorini.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0F1E3D">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='20' fill='%230F1E3D'/%3E%3Crect x='14' y='22' width='22' height='52' rx='4' fill='%23FC5E46'/%3E%3Crect x='37' y='22' width='22' height='52' rx='4' fill='%237AF2E9'/%3E%3Crect x='60' y='22' width='22' height='52' rx='4' fill='%23FECC32'/%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="/img/marca/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "https://www.viajesparque.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Destinos",
-      "item": "https://www.viajesparque.com/destinos/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Destinos destacados",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Santorini, Grecia",
-        "description": "Pueblos blancos colgados sobre la caldera, puestas de sol famosas y un mar que invita a combinar la isla con Atenas o con otras Cícladas.",
-        "image": "https://www.viajesparque.com/img/destinos/santorini.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Lisboa, Portugal",
-        "description": "Tranvías, miradores y buena mesa a poco más de dos horas de vuelo. Perfecta para una escapada larga o para empezar una ruta por Portugal.",
-        "image": "https://www.viajesparque.com/img/destinos/lisboa.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Islandia, Europa del Norte",
-        "description": "Cascadas, glaciares, playas negras y, con suerte, auroras boreales. Un viaje de naturaleza que conviene planificar bien por clima y distancias.",
-        "image": "https://www.viajesparque.com/img/destinos/kirkjufell.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Kioto, Japón",
-        "description": "Templos, jardines y barrios tradicionales. Combina de maravilla con Tokio y Osaka en un primer viaje a Japón.",
-        "image": "https://www.viajesparque.com/img/destinos/kyoto.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Bangkok, Tailandia",
-        "description": "La puerta de entrada a Tailandia: templos dorados, mercados y comida callejera antes de seguir hacia el norte o las islas del sur.",
-        "image": "https://www.viajesparque.com/img/destinos/bangkok.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Bali, Indonesia",
-        "description": "Arrozales, templos y playas en una misma isla. Muy elegida para lunas de miel y para viajes con calma.",
-        "image": "https://www.viajesparque.com/img/destinos/bali.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Maldivas, Océano Índico",
-        "description": "Villas sobre el agua, arrecifes y aguas turquesa. El destino de playa por excelencia para una ocasión especial.",
-        "image": "https://www.viajesparque.com/img/destinos/maldivas.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 8,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Machu Picchu, Perú",
-        "description": "La ciudadela inca entre montañas, dentro de una ruta por Cuzco y el Valle Sagrado. Las entradas son limitadas: mejor reservar con tiempo.",
-        "image": "https://www.viajesparque.com/img/destinos/machu-picchu.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 9,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Nueva York, Estados Unidos",
-        "description": "Rascacielos, museos, musicales y barrios con personalidad propia. Recuerda tramitar la autorización de viaje antes de salir.",
-        "image": "https://www.viajesparque.com/img/destinos/nueva-york.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "La Habana, Cuba",
-        "description": "El Malecón, la Habana Vieja y los coches clásicos, con la opción de terminar en las playas de Varadero o de los cayos.",
-        "image": "https://www.viajesparque.com/img/destinos/la-habana.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 11,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Serengeti, Tanzania",
-        "description": "Safaris en una de las sabanas más famosas del mundo, fácil de combinar con unos días de playa en Zanzíbar.",
-        "image": "https://www.viajesparque.com/img/destinos/serengeti.webp"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 12,
-      "item": {
-        "@type": "TouristDestination",
-        "name": "Marrakech, Marruecos",
-        "description": "Zocos, riads y el desierto a unas horas. Muy cerca de Canarias y con un contraste que no deja indiferente.",
-        "image": "https://www.viajesparque.com/img/destinos/marrakech.webp"
-      }
-    }
-  ]
-}
-</script>
-</head>
-<body>
-<a class="skip" href="#main">Saltar al contenido</a>
-<div id="site-header-slot"></div>
-
-<main id="main">
-<section class="page-hero simple">
-  <div class="wrap">
-    <div>
-      <nav class="crumbs" aria-label="Estás en"><a href="/">Inicio</a> / Destinos</nav>
-      <span class="eyebrow light">Destinos</span>
-      <h1>El mundo, ordenado por continentes</h1>
-      <p>Una selección de destinos que nos piden a menudo. No es un catálogo cerrado: si tienes otro lugar en mente, también te lo organizamos.</p>
-    </div>
-    
-  </div>
-</section>
+---
+title: "El mundo, ordenado por continentes"
+title_seo: "Destinos desde Tenerife por continente"
+miga: "Destinos"
+description: "Ideas de viaje desde Tenerife por continente: Santorini, Japón, Bali, Maldivas, Perú, Nueva York, Tanzania y más, con propuesta a tu medida."
+hero:
+  eyebrow: "Destinos"
+  texto: "Una selección de destinos que nos piden a menudo. No es un catálogo cerrado: si tienes otro lugar en mente, también te lo organizamos."
+---
 <section class="section">
   <div class="wrap">
-    <div class="filters" id="contFilters" role="group" aria-label="Filtrar destinos por continente">
-      <button type="button" data-cont="" aria-pressed="true">Todos</button>
-      <button type="button" data-cont="europa" aria-pressed="false">Europa</button>
-      <button type="button" data-cont="asia" aria-pressed="false">Asia</button>
-      <button type="button" data-cont="america" aria-pressed="false">América</button>
-      <button type="button" data-cont="africa" aria-pressed="false">África</button>
+    <div class="filters" data-filtro="continente" data-lista="#destGrid" role="group" aria-label="Filtrar destinos por continente">
+      <button type="button" data-valor="" aria-pressed="true">Todos</button>
+      {%- for c in site.data.continentes %}
+      <button type="button" data-valor="{{ c[0] }}" aria-pressed="false">{{ c[1] }}</button>
+      {%- endfor %}
     </div>
-    <p class="sr-only" id="destCount" aria-live="polite"></p>
+    <p class="sr-only" aria-live="polite"></p>
     <div class="dest-grid" id="destGrid">
-      <article class="dest reveal" data-continente="europa">
-        <div class="ph"><img src="/img/destinos/santorini.webp" alt="Tres cúpulas azules de Oia sobre la caldera de Santorini" loading="lazy" width="1400" height="1050"><span class="cont">Europa</span></div>
+      {%- for d in site.data.destinos %}
+      <article class="dest reveal" data-valor="{{ d.continente }}">
+        <div class="ph"><img src="/img/destinos/{{ d.imagen }}.webp" alt="{{ d.alt }}" loading="lazy" width="1400" height="1050"><span class="cont">{{ site.data.continentes[d.continente] }}</span></div>
         <div class="body">
-          <h3>Santorini</h3>
-          <div class="where">Grecia</div>
-          <p>Pueblos blancos colgados sobre la caldera, puestas de sol famosas y un mar que invita a combinar la isla con Atenas o con otras Cícladas.</p>
-          <a class="more" href="/hablamos/?destino=Santorini">Quiero una propuesta para Santorini</a>
+          <h3>{{ d.nombre }}</h3>
+          <div class="where">{{ d.pais }}</div>
+          <p>{{ d.texto }}</p>
+          <a class="more" href="/hablamos/?destino={{ d.nombre | uri_escape }}">Quiero una propuesta para {{ d.nombre }}</a>
         </div>
       </article>
-      <article class="dest reveal" data-continente="europa">
-        <div class="ph"><img src="/img/destinos/lisboa.webp" alt="Arco de la Rua Augusta en la Plaza del Comercio de Lisboa" loading="lazy" width="1400" height="1050"><span class="cont">Europa</span></div>
-        <div class="body">
-          <h3>Lisboa</h3>
-          <div class="where">Portugal</div>
-          <p>Tranvías, miradores y buena mesa a poco más de dos horas de vuelo. Perfecta para una escapada larga o para empezar una ruta por Portugal.</p>
-          <a class="more" href="/hablamos/?destino=Lisboa">Quiero una propuesta para Lisboa</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="europa">
-        <div class="ph"><img src="/img/destinos/kirkjufell.webp" alt="Montaña Kirkjufell y cascada en Islandia" loading="lazy" width="1400" height="1050"><span class="cont">Europa</span></div>
-        <div class="body">
-          <h3>Islandia</h3>
-          <div class="where">Europa del Norte</div>
-          <p>Cascadas, glaciares, playas negras y, con suerte, auroras boreales. Un viaje de naturaleza que conviene planificar bien por clima y distancias.</p>
-          <a class="more" href="/hablamos/?destino=Islandia">Quiero una propuesta para Islandia</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="asia">
-        <div class="ph"><img src="/img/destinos/kyoto.webp" alt="Calle Yasaka-dori con la pagoda Yasaka al fondo, en Kioto" loading="lazy" width="1400" height="1050"><span class="cont">Asia</span></div>
-        <div class="body">
-          <h3>Kioto</h3>
-          <div class="where">Japón</div>
-          <p>Templos, jardines y barrios tradicionales. Combina de maravilla con Tokio y Osaka en un primer viaje a Japón.</p>
-          <a class="more" href="/hablamos/?destino=Kioto">Quiero una propuesta para Kioto</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="asia">
-        <div class="ph"><img src="/img/destinos/bangkok.webp" alt="Templo del Buda Esmeralda reflejado en el agua, Bangkok" loading="lazy" width="1400" height="1050"><span class="cont">Asia</span></div>
-        <div class="body">
-          <h3>Bangkok</h3>
-          <div class="where">Tailandia</div>
-          <p>La puerta de entrada a Tailandia: templos dorados, mercados y comida callejera antes de seguir hacia el norte o las islas del sur.</p>
-          <a class="more" href="/hablamos/?destino=Bangkok">Quiero una propuesta para Bangkok</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="asia">
-        <div class="ph"><img src="/img/destinos/bali.webp" alt="Arrozales en terrazas en Bali" loading="lazy" width="1400" height="1050"><span class="cont">Asia</span></div>
-        <div class="body">
-          <h3>Bali</h3>
-          <div class="where">Indonesia</div>
-          <p>Arrozales, templos y playas en una misma isla. Muy elegida para lunas de miel y para viajes con calma.</p>
-          <a class="more" href="/hablamos/?destino=Bali">Quiero una propuesta para Bali</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="asia">
-        <div class="ph"><img src="/img/destinos/maldivas.webp" alt="Villas sobre el agua en una isla de Maldivas" loading="lazy" width="1400" height="1050"><span class="cont">Asia</span></div>
-        <div class="body">
-          <h3>Maldivas</h3>
-          <div class="where">Océano Índico</div>
-          <p>Villas sobre el agua, arrecifes y aguas turquesa. El destino de playa por excelencia para una ocasión especial.</p>
-          <a class="more" href="/hablamos/?destino=Maldivas">Quiero una propuesta para Maldivas</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="america">
-        <div class="ph"><img src="/img/destinos/machu-picchu.webp" alt="Terrazas y ruinas de Machu Picchu con el Huayna Picchu al fondo" loading="lazy" width="1400" height="1050"><span class="cont">América</span></div>
-        <div class="body">
-          <h3>Machu Picchu</h3>
-          <div class="where">Perú</div>
-          <p>La ciudadela inca entre montañas, dentro de una ruta por Cuzco y el Valle Sagrado. Las entradas son limitadas: mejor reservar con tiempo.</p>
-          <a class="more" href="/hablamos/?destino=Machu%20Picchu">Quiero una propuesta para Machu Picchu</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="america">
-        <div class="ph"><img src="/img/destinos/nueva-york.webp" alt="Vista de Manhattan y el Empire State Building al atardecer" loading="lazy" width="1400" height="1050"><span class="cont">América</span></div>
-        <div class="body">
-          <h3>Nueva York</h3>
-          <div class="where">Estados Unidos</div>
-          <p>Rascacielos, museos, musicales y barrios con personalidad propia. Recuerda tramitar la autorización de viaje antes de salir.</p>
-          <a class="more" href="/hablamos/?destino=Nueva%20York">Quiero una propuesta para Nueva York</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="america">
-        <div class="ph"><img src="/img/destinos/la-habana.webp" alt="Coche clásico circulando por el Malecón de La Habana" loading="lazy" width="1400" height="1050"><span class="cont">América</span></div>
-        <div class="body">
-          <h3>La Habana</h3>
-          <div class="where">Cuba</div>
-          <p>El Malecón, la Habana Vieja y los coches clásicos, con la opción de terminar en las playas de Varadero o de los cayos.</p>
-          <a class="more" href="/hablamos/?destino=La%20Habana">Quiero una propuesta para La Habana</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="africa">
-        <div class="ph"><img src="/img/destinos/serengeti.webp" alt="Amanecer sobre la sabana del Serengeti" loading="lazy" width="1400" height="1050"><span class="cont">África</span></div>
-        <div class="body">
-          <h3>Serengeti</h3>
-          <div class="where">Tanzania</div>
-          <p>Safaris en una de las sabanas más famosas del mundo, fácil de combinar con unos días de playa en Zanzíbar.</p>
-          <a class="more" href="/hablamos/?destino=Serengeti">Quiero una propuesta para Serengeti</a>
-        </div>
-      </article>
-      <article class="dest reveal" data-continente="africa">
-        <div class="ph"><img src="/img/destinos/marrakech.webp" alt="Lámparas colgantes en un zoco de Marrakech" loading="lazy" width="1400" height="1050"><span class="cont">África</span></div>
-        <div class="body">
-          <h3>Marrakech</h3>
-          <div class="where">Marruecos</div>
-          <p>Zocos, riads y el desierto a unas horas. Muy cerca de Canarias y con un contraste que no deja indiferente.</p>
-          <a class="more" href="/hablamos/?destino=Marrakech">Quiero una propuesta para Marrakech</a>
-        </div>
-      </article>
+      {%- endfor %}
     </div>
   </div>
 </section>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Destinos destacados","itemListElement":[
+{%- for d in site.data.destinos %}
+{"@type":"ListItem","position":{{ forloop.index }},"item":{"@type":"TouristDestination","name":{{ d.nombre | append: ", " | append: d.pais | jsonify }},"description":{{ d.texto | jsonify }},"image":"{{ '/img/destinos/' | append: d.imagen | append: '.webp' | absolute_url }}"}}{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+]}
+</script>
 
 <section class="section white">
   <div class="wrap split">
@@ -326,44 +56,4 @@
     </div>
   </div>
 </section>
-<section class="section tight">
-  <div class="wrap">
-    <div class="cta-band reveal">
-      <div>
-        <h2>¿No ves tu destino?</h2>
-        <p>Esta es solo una muestra. Cuéntanos a dónde quieres ir y lo preparamos.</p>
-      </div>
-      <div class="btns">
-        <a href="/hablamos/" class="btn">Hablamos</a>
-        <a href="tel:+34922215012" class="btn ghost">Llamar: 922 215 012</a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<div id="site-footer-slot"></div>
-<script src="/assets/site-common.js"></script>
-<script>
-(function () {
-  const bar = document.getElementById('contFilters');
-  const cards = document.querySelectorAll('#destGrid .dest');
-  const count = document.getElementById('destCount');
-  const valid = ['europa', 'asia', 'america', 'africa'];
-  function select(cont) {
-    bar.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.cont === cont)));
-    let n = 0;
-    cards.forEach(c => { const show = !cont || c.dataset.continente === cont; c.hidden = !show; if (show) { n++; c.classList.add('in'); } });
-    count.textContent = n + ' destinos mostrados';
-  }
-  bar.addEventListener('click', e => {
-    const b = e.target.closest('button'); if (!b) return;
-    history.replaceState(null, '', b.dataset.cont ? '?continente=' + b.dataset.cont : location.pathname);
-    select(b.dataset.cont);
-  });
-  const p = new URLSearchParams(location.search).get('continente');
-  if (valid.includes(p)) select(p);
-})();
-</script>
-</body>
-</html>
+{% include cta.html titulo="¿No ves tu destino?" texto="Esta es solo una muestra. Cuéntanos a dónde quieres ir y lo preparamos." %}

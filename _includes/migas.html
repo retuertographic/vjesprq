@@ -1,0 +1,1 @@
+<nav class="crumbs" aria-label="Estás en"><a href="/">Inicio</a>{% for m in page.migas %} / <a href="{{ m.url }}">{{ m.titulo }}</a>{% endfor %} / {{ page.miga | default: page.title }}</nav>

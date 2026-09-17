@@ -1,0 +1,73 @@
+# Destinos de /destinos/. continente: europa | asia | america | africa
+- continente: europa
+  imagen: santorini
+  nombre: Santorini
+  pais: Grecia
+  alt: Tres cúpulas azules de Oia sobre la caldera de Santorini
+  texto: Pueblos blancos colgados sobre la caldera, puestas de sol famosas y un mar que invita a combinar la isla con Atenas o con otras Cícladas.
+- continente: europa
+  imagen: lisboa
+  nombre: Lisboa
+  pais: Portugal
+  alt: Arco de la Rua Augusta en la Plaza del Comercio de Lisboa
+  texto: Tranvías, miradores y buena mesa a poco más de dos horas de vuelo. Perfecta para una escapada larga o para empezar una ruta por Portugal.
+- continente: europa
+  imagen: kirkjufell
+  nombre: Islandia
+  pais: Europa del Norte
+  alt: Montaña Kirkjufell y cascada en Islandia
+  texto: Cascadas, glaciares, playas negras y, con suerte, auroras boreales. Un viaje de naturaleza que conviene planificar bien por clima y distancias.
+- continente: asia
+  imagen: kyoto
+  nombre: Kioto
+  pais: Japón
+  alt: Calle Yasaka-dori con la pagoda Yasaka al fondo, en Kioto
+  texto: Templos, jardines y barrios tradicionales. Combina de maravilla con Tokio y Osaka en un primer viaje a Japón.
+- continente: asia
+  imagen: bangkok
+  nombre: Bangkok
+  pais: Tailandia
+  alt: Templo del Buda Esmeralda reflejado en el agua, Bangkok
+  texto: "La puerta de entrada a Tailandia: templos dorados, mercados y comida callejera antes de seguir hacia el norte o las islas del sur."
+- continente: asia
+  imagen: bali
+  nombre: Bali
+  pais: Indonesia
+  alt: Arrozales en terrazas en Bali
+  texto: Arrozales, templos y playas en una misma isla. Muy elegida para lunas de miel y para viajes con calma.
+- continente: asia
+  imagen: maldivas
+  nombre: Maldivas
+  pais: Océano Índico
+  alt: Villas sobre el agua en una isla de Maldivas
+  texto: Villas sobre el agua, arrecifes y aguas turquesa. El destino de playa por excelencia para una ocasión especial.
+- continente: america
+  imagen: machu-picchu
+  nombre: Machu Picchu
+  pais: Perú
+  alt: Terrazas y ruinas de Machu Picchu con el Huayna Picchu al fondo
+  texto: "La ciudadela inca entre montañas, dentro de una ruta por Cuzco y el Valle Sagrado. Las entradas son limitadas: mejor reservar con tiempo."
+- continente: america
+  imagen: nueva-york
+  nombre: Nueva York
+  pais: Estados Unidos
+  alt: Vista de Manhattan y el Empire State Building al atardecer
+  texto: Rascacielos, museos, musicales y barrios con personalidad propia. Recuerda tramitar la autorización de viaje antes de salir.
+- continente: america
+  imagen: la-habana
+  nombre: La Habana
+  pais: Cuba
+  alt: Coche clásico circulando por el Malecón de La Habana
+  texto: El Malecón, la Habana Vieja y los coches clásicos, con la opción de terminar en las playas de Varadero o de los cayos.
+- continente: africa
+  imagen: serengeti
+  nombre: Serengeti
+  pais: Tanzania
+  alt: Amanecer sobre la sabana del Serengeti
+  texto: Safaris en una de las sabanas más famosas del mundo, fácil de combinar con unos días de playa en Zanzíbar.
+- continente: africa
+  imagen: marrakech
+  nombre: Marrakech
+  pais: Marruecos
+  alt: Lámparas colgantes en un zoco de Marrakech
+  texto: Zocos, riads y el desierto a unas horas. Muy cerca de Canarias y con un contraste que no deja indiferente.

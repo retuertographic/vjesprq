@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{%- assign cat = site.data.categorias[page.categoria] -%}
+<section class="page-hero simple">
+  <div class="wrap">
+    <div>
+      {% include migas.html %}
+      <a class="eyebrow light" href="/diario-de-viaje/?categoria={{ page.categoria }}">{{ cat.nombre }}</a>
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.resumen }}</p>
+      <p class="post-meta">{{ page.minutos }} min de lectura · Equipo de {{ site.title }}</p>
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <article class="article">
+      <div class="cover"><img src="{{ page.image }}" alt=""></div>
+      <div class="prose">
+{{ content }}
+      </div>
+      <div class="post-share"><span class="label">Compartir:</span><div class="socials" data-compartir="{{ page.url | absolute_url }}" data-titulo="{{ page.title | escape }}"></div></div>
+      <div class="post-cta">
+        <h2>¿Lo preparamos juntos?</h2>
+        <p>Cuéntanos qué tienes en mente y te respondemos con una propuesta a tu medida.</p>
+        <a href="/hablamos/" class="btn">Hablamos</a>
+      </div>
+      <a class="back-link" href="/diario-de-viaje/">← Volver al diario de viaje</a>
+    </article>
+  </div>
+</section>
+{%- assign otros = site.posts | where_exp: "p", "p.url != page.url" %}
+{%- if otros.size > 0 %}
+<section class="section white">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Sigue leyendo</span><h2>Más del diario</h2></div>
+    <div class="post-grid">
+      {%- for p in otros limit: 3 %}
+      {% include tarjeta-articulo.html post=p %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}

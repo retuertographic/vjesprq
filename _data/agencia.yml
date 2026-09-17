@@ -1,0 +1,36 @@
+# Datos de la agencia: se usan en el pie, en "Hablamos", en el aviso legal y en los datos estructurados.
+nombre: Viajes Parque
+razon_social: Viajes Parque, S.L.
+nif: B38404927
+email: gestion@viajesparque.com
+email_rgpd: lopd-rgpd@viajesparque.com
+facebook: https://www.facebook.com/ViajesParque/
+logo: /img/marca/logo-viajes-parque-marino.webp
+
+horario:
+  - "Lunes a viernes: 9:00–13:15 y 16:00–19:00"
+  - "Sábados: 10:00–13:00"
+  - "Domingos: cerrado"
+horario_corto: L–V 9:00–13:15 y 16:00–19:00<br>Sáb. 10:00–13:00
+
+oficinas:
+  - id: santa-cruz
+    tipo: Oficina central (sede)
+    nombre: Santa Cruz de Tenerife
+    calle: C/ Santiago Beyro, 24-A
+    calle_schema: Calle Santiago Beyro, 24-A
+    cp: "38007"
+    localidad: Santa Cruz de Tenerife
+    telefono: 922 215 012
+    tel: "+34922215012"
+    mapa: https://www.google.com/maps/search/?api=1&query=Viajes+Parque+Calle+Santiago+Beyro+24+Santa+Cruz+de+Tenerife
+  - id: tegueste
+    tipo: Oficina
+    nombre: Tegueste
+    calle: Ctra. Gral. La Laguna a Punta del Hidalgo, 202
+    calle_schema: Ctra. Gral. La Laguna a Punta del Hidalgo, 202
+    cp: "38280"
+    localidad: Tegueste
+    telefono: 922 546 111
+    tel: "+34922546111"
+    mapa: https://www.google.com/maps/search/?api=1&query=Viajes+Parque+Tegueste+Carretera+General+La+Laguna+Punta+del+Hidalgo+202

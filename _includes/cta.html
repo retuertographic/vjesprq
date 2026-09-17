@@ -1,0 +1,21 @@
+{%- comment -%}
+  Bloque naranja de llamada a la acción.
+  Parámetros: titulo, texto, url (por defecto /hablamos/), sin_telefono (true para ocultar el botón de llamar)
+{%- endcomment -%}
+<section class="section tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>{{ include.titulo | default: "¿Hablamos de tu próximo viaje?" }}</h2>
+        <p>{{ include.texto | default: "Cuéntanoslo en dos líneas y te respondemos con una propuesta pensada para ti." }}</p>
+      </div>
+      <div class="btns">
+        <a href="{{ include.url | default: '/hablamos/' }}" class="btn">Hablamos</a>
+        {%- unless include.sin_telefono %}
+        {%- assign sede = site.data.agencia.oficinas[0] %}
+        <a href="tel:{{ sede.tel }}" class="btn ghost">Llamar: {{ sede.telefono }}</a>
+        {%- endunless %}
+      </div>
+    </div>
+  </div>
+</section>

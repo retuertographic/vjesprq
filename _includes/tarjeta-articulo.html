@@ -1,0 +1,10 @@
+{%- assign p = include.post -%}
+<article class="post-card reveal" data-valor="{{ p.categoria }}" data-href="{{ p.url }}">
+  <div class="thumb"><img src="{{ p.image }}" alt="" loading="lazy"></div>
+  <div class="body">
+    <span class="cat">{{ site.data.categorias[p.categoria].nombre }}</span>
+    <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
+    <p>{{ p.resumen }}</p>
+    <span class="meta">{{ p.minutos }} min de lectura</span>
+  </div>
+</article>

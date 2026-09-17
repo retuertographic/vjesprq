@@ -1,0 +1,34 @@
+{%- comment -%} Tarjetas de los tres públicos. Parámetro: etiqueta (h2 o h3) {%- endcomment -%}
+{%- assign tag = include.etiqueta | default: "h3" -%}
+<div class="grid c3">
+  <a class="audience reveal" href="/experiencias/particulares/">
+    <img src="{{ include.img1 | default: '/img/fotos/tour-guiado.webp' }}" alt="" loading="lazy">
+    <div class="in">
+      <div class="num" style="background:var(--coral)">1</div>
+      <{{ tag }} class="aud-title">Particulares</{{ tag }}>
+      <div class="who">Familias, parejas y viajeros por libre</div>
+      <p>Vacaciones, lunas de miel, cruceros, escapadas y aventuras a tu medida.</p>
+      <span class="more">Ver experiencias</span>
+    </div>
+  </a>
+  <a class="audience reveal" href="/experiencias/empresas/">
+    <img src="/img/fotos/viaje-negocios.webp" alt="" loading="lazy">
+    <div class="in">
+      <div class="num" style="background:var(--aqua)">2</div>
+      <{{ tag }} class="aud-title">Empresas</{{ tag }}>
+      <div class="who">Compañías con equipos que viajan entre islas</div>
+      <p>Vuelos inter-insulares recurrentes, facturación centralizada y reservas de última hora.</p>
+      <span class="more">Entre islas, sin perder el vuelo</span>
+    </div>
+  </a>
+  <a class="audience reveal" href="/experiencias/instituciones/">
+    <img src="/img/fotos/avion-pista.webp" alt="" loading="lazy">
+    <div class="in">
+      <div class="num" style="background:var(--yellow)">3</div>
+      <{{ tag }} class="aud-title">Instituciones</{{ tag }}>
+      <div class="who">Clubes deportivos y ayuntamientos</div>
+      <p>Desplazamientos de grupo con calendario fijo, todo coordinado y con la factura que corresponde.</p>
+      <span class="more">Cuando viaja el equipo entero</span>
+    </div>
+  </a>
+</div>

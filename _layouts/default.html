@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+{% include head.html %}
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+{% include header.html %}
+
+<main id="main">
+{%- if page.hero %}
+{% include hero.html %}
+{%- endif %}
+{{ content }}
+</main>
+
+{% include footer.html %}
+<script src="/assets/site-common.js"></script>
+{%- for s in page.scripts %}
+<script src="{{ s }}"></script>
+{%- endfor %}
+</body>
+</html>

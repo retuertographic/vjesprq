@@ -1,0 +1,122 @@
+[
+ {
+  "imagen": "santorini",
+  "lugar": "Oia, Santorini (Grecia)",
+  "autor": "Giles Laurent",
+  "fuente": "https://commons.wikimedia.org/wiki/File:1000_Three_domes_of_Oia_in_Santorini_Photo_by_Giles_Laurent.jpg",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+ },
+ {
+  "imagen": "kirkjufell",
+  "lugar": "Kirkjufell (Islandia)",
+  "autor": "Jakub Hałun",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Kirkjufell,_Iceland,_20240714_1631_0713.jpg",
+  "licencia": "CC BY 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es"
+ },
+ {
+  "imagen": "lisboa",
+  "lugar": "Plaza del Comercio, Lisboa (Portugal)",
+  "autor": "Diego Delso",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Arco_Triunfal_da_Rua_Augusta,_Plaza_del_Comercio,_Lisboa,_Portugal,_2012-05-12,_DD_02.JPG",
+  "licencia": "CC BY-SA 3.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.es"
+ },
+ {
+  "imagen": "kyoto",
+  "lugar": "Yasaka-dori, Kioto (Japón)",
+  "autor": "Basile Morin",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_(Hokan-ji_Temple),_Kyoto,_Japan.jpg",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+ },
+ {
+  "imagen": "bangkok",
+  "lugar": "Templo del Buda Esmeralda, Bangkok (Tailandia)",
+  "autor": "Nawit science",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Temple_of_the_Emerald_Buddha.jpg",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+ },
+ {
+  "imagen": "bali",
+  "lugar": "Arrozales en Bali (Indonesia)",
+  "autor": "CEphoto, Uwe Aranas",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Muncan_Bali_Indonesia_Rice-paddy-along-Jalan-Raya-Muncan-01.jpg",
+  "licencia": "CC BY-SA 3.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.es"
+ },
+ {
+  "imagen": "maldivas",
+  "lugar": "Maldivas",
+  "autor": "Martin Falbisoner",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Diamonds_Thudufushi_Beach_and_Water_Villas,_May_2017_-04.jpg",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+ },
+ {
+  "imagen": "machu-picchu",
+  "lugar": "Machu Picchu (Perú)",
+  "autor": "Diego Delso",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Per%C3%BA,_2015-07-30,_DD_60.JPG",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+ },
+ {
+  "imagen": "nueva-york",
+  "lugar": "Manhattan, Nueva York (EE. UU.)",
+  "autor": "Dllu",
+  "fuente": "https://commons.wikimedia.org/wiki/File:View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+ },
+ {
+  "imagen": "la-habana",
+  "lugar": "Malecón de La Habana (Cuba)",
+  "autor": "Ezarate",
+  "fuente": "https://commons.wikimedia.org/wiki/File:AvMalecon-LaHabanaCuba-04735.jpg",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+ },
+ {
+  "imagen": "serengeti",
+  "lugar": "Serengeti (Tanzania)",
+  "autor": "Giles Laurent",
+  "fuente": "https://commons.wikimedia.org/wiki/File:004_Sunrise_at_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+ },
+ {
+  "imagen": "marrakech",
+  "lugar": "Zoco de Marrakech (Marruecos)",
+  "autor": "Petar Milošević",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Oriental_hanging_lanterns._Souk_Haddadine,_Marrakech_Medina,_Morocco.jpg",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+ },
+ {
+  "imagen": "anaga",
+  "lugar": "Chinamada, Anaga (Tenerife)",
+  "autor": "H. Zell",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Coast_at_Chinamada_-_Tenerife_04.jpg",
+  "licencia": "CC BY-SA 3.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.es"
+ },
+ {
+  "imagen": "roque-nublo",
+  "lugar": "Roque Nublo (Gran Canaria)",
+  "autor": "H. Zell",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Roque_Nublo_-_Barranco_de_Tejeda.JPG",
+  "licencia": "CC BY 3.0",
+  "licencia_url": "https://creativecommons.org/licenses/by/3.0/deed.es"
+ },
+ {
+  "imagen": "crucero",
+  "lugar": "Crucero en el puerto de Sète (Francia)",
+  "autor": "Christian Ferrer",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Viking_Sky_(ship,_2017)_-_S%C3%A8te_-_December_2018.jpg",
+  "licencia": "CC BY 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es"
+ }
+]

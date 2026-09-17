@@ -1,0 +1,16 @@
+# Categorías del Diario de viaje (la clave es la que se usa en "categoria:" de cada artículo)
+destinos:
+  nombre: Destinos contados por quien ha estado
+  desc: Guías reales, no fichas genéricas copiadas de cualquier lado.
+antes-de-ir:
+  nombre: Antes de hacer la maleta
+  desc: "Consejos prácticos: documentación, clima, presupuesto y qué llevar."
+historias:
+  nombre: Historias de viajeros
+  desc: Experiencias reales de clientes que viajaron con nosotros.
+trabajo:
+  nombre: Viajar por trabajo, sin dolores de cabeza
+  desc: Consejos y casos para empresas e instituciones que viajan a menudo.
+novedades:
+  nombre: Novedades de la agencia
+  desc: Lo que vamos mejorando, contado en presente.

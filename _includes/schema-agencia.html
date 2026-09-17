@@ -1,0 +1,33 @@
+{%- assign a = site.data.agencia -%}
+{%- assign sede = a.oficinas[0] -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "@id": "{{ '/#agencia' | absolute_url }}",
+  "name": "{{ a.nombre }}",
+  "legalName": "{{ a.razon_social }}",
+  "taxID": "{{ a.nif }}",
+  "url": "{{ '/' | absolute_url }}",
+  "logo": "{{ '/img/marca/logo-viajes-parque.webp' | absolute_url }}",
+  "image": "{{ '/img/destinos/santorini.webp' | absolute_url }}",
+  "email": "{{ a.email }}",
+  "telephone": "{{ sede.tel }}",
+  "areaServed": "Islas Canarias",
+  "sameAs": ["{{ a.facebook }}"],
+  "address": {"@type": "PostalAddress", "streetAddress": {{ sede.calle_schema | jsonify }}, "postalCode": "{{ sede.cp }}",
+    "addressLocality": {{ sede.localidad | jsonify }}, "addressRegion": "Santa Cruz de Tenerife", "addressCountry": "ES"},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "13:15"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "16:00", "closes": "19:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "13:00"}
+  ],
+  "department": [
+    {%- for o in a.oficinas offset: 1 %}
+    {"@type": "TravelAgency", "name": "{{ a.nombre }} {{ o.nombre }}", "telephone": "{{ o.tel }}", "email": "{{ a.email }}",
+      "address": {"@type": "PostalAddress", "streetAddress": {{ o.calle_schema | jsonify }}, "postalCode": "{{ o.cp }}",
+        "addressLocality": {{ o.localidad | jsonify }}, "addressRegion": "Santa Cruz de Tenerife", "addressCountry": "ES"}}{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>

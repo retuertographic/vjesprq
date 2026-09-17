@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diario de viaje · Consejos y destinos | Viajes Parque</title>
+<meta name="description" content="El blog de Viajes Parque: consejos antes de viajar, destinos contados por quien ha estado, cruceros, lunas de miel y viajes de empresa desde Tenerife.">
+<link rel="canonical" href="https://www.viajesparque.com/diario-de-viaje/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Viajes Parque">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Diario de viaje · Viajes Parque">
+<meta property="og:description" content="Consejos antes de viajar, destinos contados por quien ha estado y novedades de la agencia.">
+<meta property="og:url" content="https://www.viajesparque.com/diario-de-viaje/">
+<meta property="og:image" content="https://www.viajesparque.com/img/fotos/tarjeta-embarque.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F1E3D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='20' fill='%230F1E3D'/%3E%3Crect x='14' y='22' width='22' height='52' rx='4' fill='%23FC5E46'/%3E%3Crect x='37' y='22' width='22' height='52' rx='4' fill='%237AF2E9'/%3E%3Crect x='60' y='22' width='22' height='52' rx='4' fill='%23FECC32'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="/img/marca/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div id="site-header-slot"></div>
+
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow light">Diario de viaje</span>
+      <h1>Lo que sabemos de viajar, contado sin folleto</h1>
+      <p>Consejos prácticos antes de salir, destinos contados por quien ha estado y lo que vamos aprendiendo en la agencia. Para leer con calma y viajar con cabeza.</p>
+    </div>
+    <div class="ph-img"><img src="/img/fotos/tarjeta-embarque.webp" alt="Viajero con pasaporte y tarjeta de embarque en el aeropuerto" width="1201" height="629"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="filters" id="catFilters" role="group" aria-label="Filtrar por categoría">
+      <button type="button" data-cat="" aria-pressed="true">Todo</button>
+    </div>
+    <div class="post-grid" id="postGrid"></div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Qué encontrarás</span>
+      <h2>Cinco maneras de contar un viaje</h2>
+      <p>Escribimos desde la agencia, con lo que vemos cada día en el mostrador y al teléfono.</p>
+    </div>
+    <ul class="cat-list">
+      <li class="reveal"><a href="?categoria=destinos"><strong>Destinos contados por quien ha estado</strong></a><span>Guías reales, no fichas genéricas copiadas de cualquier lado.</span></li>
+      <li class="reveal"><a href="?categoria=antes-de-ir"><strong>Antes de hacer la maleta</strong></a><span>Consejos prácticos: documentación, clima, presupuesto y qué llevar.</span></li>
+      <li class="reveal"><a href="?categoria=historias"><strong>Historias de viajeros</strong></a><span>Experiencias reales de clientes que viajaron con nosotros.</span></li>
+      <li class="reveal"><a href="?categoria=trabajo"><strong>Viajar por trabajo, sin dolores de cabeza</strong></a><span>Consejos y casos para empresas e instituciones que viajan a menudo.</span></li>
+      <li class="reveal"><a href="?categoria=novedades"><strong>Novedades de la agencia</strong></a><span>Lo que vamos mejorando, contado en presente.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>¿Y si el siguiente artículo es tu viaje?</h2>
+        <p>Si te ha picado el gusanillo, cuéntanos qué tienes en mente y lo aterrizamos contigo.</p>
+      </div>
+      <div class="btns"><a href="/hablamos/" class="btn">Hablamos</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="site-footer-slot"></div>
+<script src="/assets/site-common.js"></script>
+<script src="/assets/diario.js"></script>
+<script>
+(async function () {
+  const data = await VPDiario.load();
+  const bar = document.getElementById('catFilters');
+  Object.entries(data.categorias).forEach(([key, c]) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.dataset.cat = key; b.textContent = c.nombre; b.title = c.desc;
+    b.setAttribute('aria-pressed', 'false');
+    bar.appendChild(b);
+  });
+  const params = new URLSearchParams(location.search);
+  function select(cat) {
+    bar.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.cat === cat)));
+    VPDiario.render('postGrid', { categoria: cat || undefined });
+  }
+  bar.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const cat = b.dataset.cat;
+    history.replaceState(null, '', cat ? '?categoria=' + cat : location.pathname);
+    select(cat);
+  });
+  select(data.categorias[params.get('categoria')] ? params.get('categoria') : '');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hablamos · Contacto de Viajes Parque en Santa Cruz y Tegueste</title>
+<meta name="description" content="Contacta con Viajes Parque: formulario para particulares, vía directa para empresas y oficinas en Santa Cruz de Tenerife (922 215 012) y Tegueste.">
+<link rel="canonical" href="https://www.viajesparque.com/hablamos/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Viajes Parque">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Hablamos · Contacto de Viajes Parque en Santa Cruz y Tegueste">
+<meta property="og:description" content="Contacta con Viajes Parque: formulario para particulares, vía directa para empresas y oficinas en Santa Cruz de Tenerife (922 215 012) y Tegueste.">
+<meta property="og:url" content="https://www.viajesparque.com/hablamos/">
+<meta property="og:image" content="https://www.viajesparque.com/img/fotos/tarjeta-embarque.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F1E3D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='20' fill='%230F1E3D'/%3E%3Crect x='14' y='22' width='22' height='52' rx='4' fill='%23FC5E46'/%3E%3Crect x='37' y='22' width='22' height='52' rx='4' fill='%237AF2E9'/%3E%3Crect x='60' y='22' width='22' height='52' rx='4' fill='%23FECC32'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="/img/marca/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.viajesparque.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Hablamos",
+      "item": "https://www.viajesparque.com/hablamos/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Hablamos · Contacto de Viajes Parque",
+  "about": {
+    "@id": "https://www.viajesparque.com/#agencia"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div id="site-header-slot"></div>
+
+<main id="main">
+<section class="page-hero simple">
+  <div class="wrap">
+    <div>
+      <nav class="crumbs" aria-label="Estás en"><a href="/">Inicio</a> / Hablamos</nav>
+      <span class="eyebrow light">Hablamos</span>
+      <h1>Cuéntanos qué viaje tienes en la cabeza</h1>
+      <p>Escríbenos, llámanos o pásate por cualquiera de nuestras dos oficinas. Contestamos personas, y lo hacemos rápido.</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="wrap contact-layout">
+    <div>
+      <div class="contact-tabs" role="tablist" aria-label="Tipo de consulta">
+        <button type="button" role="tab" id="tab-particular" aria-controls="panel-particular" aria-selected="true">
+          <strong>Viajo por placer</strong>Formulario corto para particulares
+        </button>
+        <button type="button" role="tab" id="tab-empresa" aria-controls="panel-empresa" aria-selected="false" tabindex="-1">
+          <strong>¿Viajas por trabajo entre islas?</strong>Vía directa para empresas e instituciones
+        </button>
+      </div>
+
+      <div class="form-card" role="tabpanel" id="panel-particular" aria-labelledby="tab-particular">
+        <h2>Tu próximo viaje, en dos líneas</h2>
+        <p>Un formulario corto, no un cuestionario de agencia. Con esto ya podemos empezar.</p>
+        <form id="formParticular" novalidate>
+          <input type="hidden" name="tipo_consulta" value="Particular">
+          <div class="fields">
+            <div class="field"><label for="p_nombre">Nombre</label><input id="p_nombre" name="nombre" autocomplete="name" required><span class="err" id="p_nombre_err"></span></div>
+            <div class="field"><label for="p_email">Correo electrónico</label><input id="p_email" name="email" type="email" autocomplete="email" required><span class="err" id="p_email_err"></span></div>
+            <div class="field"><label for="p_tel">Teléfono <small>(opcional)</small></label><input id="p_tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel"><span class="err" id="p_tel_err"></span></div>
+            <div class="field"><label for="p_oficina">Oficina que prefieres</label>
+              <select id="p_oficina" name="oficina"><option>Me da igual</option><option>Santa Cruz de Tenerife</option><option>Tegueste</option></select></div>
+            <div class="field full"><label for="p_viaje">¿Qué viaje tienes en la cabeza?</label><textarea id="p_viaje" name="mensaje" required placeholder="Destino (o idea), fechas aproximadas, con quién viajas…"></textarea><span class="err" id="p_viaje_err"></span></div>
+            <label class="check"><input type="checkbox" id="p_ok" name="privacidad" required><span>He leído la <a href="/politica-de-privacidad/" target="_blank">política de privacidad</a> y acepto que Viajes Parque use estos datos para responder a mi consulta.</span></label>
+            <span class="err" id="p_ok_err"></span>
+            <input class="hp" type="text" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+          </div>
+          <div class="form-actions"><button class="btn" type="submit">Enviar consulta</button></div>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <div class="form-card" role="tabpanel" id="panel-empresa" aria-labelledby="tab-empresa" hidden>
+        <h2>Cuéntanos sobre tu equipo</h2>
+        <p>Cuántas personas viajan, con qué frecuencia y entre qué islas. Te respondemos con una propuesta de trabajo.</p>
+        <form id="formEmpresa" novalidate>
+          <input type="hidden" name="tipo_consulta" value="Empresa / institución">
+          <div class="fields">
+            <div class="field"><label for="e_entidad">Empresa o entidad</label><input id="e_entidad" name="entidad" autocomplete="organization" required><span class="err" id="e_entidad_err"></span></div>
+            <div class="field"><label for="e_tipo">Tipo</label>
+              <select id="e_tipo" name="tipo_entidad"><option value="Empresa">Empresa</option><option value="Club o equipo deportivo">Club o equipo deportivo</option><option value="Ayuntamiento o entidad pública">Ayuntamiento o entidad pública</option><option value="Otra">Otra</option></select></div>
+            <div class="field"><label for="e_nombre">Persona de contacto</label><input id="e_nombre" name="nombre" autocomplete="name" required><span class="err" id="e_nombre_err"></span></div>
+            <div class="field"><label for="e_tel">Teléfono</label><input id="e_tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required><span class="err" id="e_tel_err"></span></div>
+            <div class="field full"><label for="e_email">Correo electrónico</label><input id="e_email" name="email" type="email" autocomplete="email" required><span class="err" id="e_email_err"></span></div>
+            <div class="field"><label for="e_personas">Personas que viajan</label>
+              <select id="e_personas" name="personas"><option>1–5</option><option>6–15</option><option>16–30</option><option>Más de 30</option></select></div>
+            <div class="field"><label for="e_frecuencia">Frecuencia de viaje</label>
+              <select id="e_frecuencia" name="frecuencia"><option>Varias veces por semana</option><option>Semanal</option><option>Mensual</option><option>Por temporada o calendario</option><option>Puntual</option></select></div>
+            <div class="field full"><label for="e_msg">Rutas habituales y lo que necesitáis</label><textarea id="e_msg" name="mensaje" required placeholder="Ej.: Tenerife Norte – Gran Canaria dos veces por semana, hotel una noche, factura mensual…"></textarea><span class="err" id="e_msg_err"></span></div>
+            <label class="check"><input type="checkbox" id="e_ok" name="privacidad" required><span>He leído la <a href="/politica-de-privacidad/" target="_blank">política de privacidad</a> y acepto que Viajes Parque use estos datos para responder a mi consulta.</span></label>
+            <span class="err" id="e_ok_err"></span>
+            <input class="hp" type="text" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+          </div>
+          <div class="form-actions"><button class="btn" type="submit">Enviar consulta</button><a href="tel:+34922215012">o llámanos: 922 215 012</a></div>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+
+    <aside class="offices" aria-label="Oficinas">
+      <div class="office">
+        <span class="kind">Oficina central (sede)</span>
+        <h3>Santa Cruz de Tenerife</h3>
+        <dl>
+          <div><dt>Dirección</dt><dd>C/ Santiago Beyro, 24-A<br>38007 Santa Cruz de Tenerife</dd></div>
+          <div><dt>Teléfono</dt><dd><a href="tel:+34922215012">922 215 012</a></dd></div>
+          <div><dt>Correo</dt><dd><a href="mailto:gestion@viajesparque.com">gestion@viajesparque.com</a></dd></div>
+          <div><dt>Horario</dt><dd>Lunes a viernes: 9:00–13:15 y 16:00–19:00<br>Sábados: 10:00–13:00<br>Domingos: cerrado</dd></div>
+        </dl>
+        <a class="btn yellow" href="https://www.google.com/maps/search/?api=1&amp;query=Viajes+Parque+Calle+Santiago+Beyro+24+Santa+Cruz+de+Tenerife" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+      <div class="office">
+        <span class="kind">Oficina</span>
+        <h3>Tegueste</h3>
+        <dl>
+          <div><dt>Dirección</dt><dd>Ctra. Gral. La Laguna a Punta del Hidalgo, 202<br>38280 Tegueste</dd></div>
+          <div><dt>Teléfono</dt><dd><a href="tel:+34922546111">922 546 111</a></dd></div>
+          <div><dt>Correo</dt><dd><a href="mailto:gestion@viajesparque.com">gestion@viajesparque.com</a></dd></div>
+          <div><dt>Horario</dt><dd>Lunes a viernes: 9:00–13:15 y 16:00–19:00<br>Sábados: 10:00–13:00<br>Domingos: cerrado</dd></div>
+        </dl>
+        <a class="btn yellow" href="https://www.google.com/maps/search/?api=1&amp;query=Viajes+Parque+Tegueste+Carretera+General+La+Laguna+Punta+del+Hidalgo+202" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<div id="site-footer-slot"></div>
+<script src="/assets/site-common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="/assets/formularios.js"></script>
+</body>
+</html>

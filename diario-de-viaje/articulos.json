@@ -1,0 +1,83 @@
+{
+  "categorias": {
+    "destinos": {
+      "nombre": "Destinos contados por quien ha estado",
+      "desc": "Guías reales, no fichas genéricas copiadas de cualquier lado."
+    },
+    "antes-de-ir": {
+      "nombre": "Antes de hacer la maleta",
+      "desc": "Documentación, clima, presupuesto y qué llevar."
+    },
+    "historias": {
+      "nombre": "Historias de viajeros",
+      "desc": "Experiencias reales de quienes viajaron con nosotros."
+    },
+    "trabajo": {
+      "nombre": "Viajar por trabajo, sin dolores de cabeza",
+      "desc": "Consejos y casos para empresas e instituciones."
+    },
+    "novedades": {
+      "nombre": "Novedades de la agencia",
+      "desc": "Lo que vamos mejorando, contado en presente."
+    }
+  },
+  "articulos": [
+    {
+      "slug": "agencia-de-viajes-o-reservar-online",
+      "categoria": "antes-de-ir",
+      "fecha": "2026-09-17",
+      "orden": 5,
+      "minutos": 6,
+      "imagen": "/img/fotos/tarjeta-embarque.webp",
+      "titulo": "¿Agencia de viajes o reservar por internet? Lo que de verdad cambia",
+      "resumen": "Reservar online parece más barato y más rápido. A veces lo es. Te contamos, sin rodeos, en qué casos compensa hacerlo tú y en cuáles te ahorras dinero y disgustos con una agencia.",
+      "titulo_seo": "Agencia de viajes o reservar online: qué compensa",
+      "descripcion": "¿Agencia de viajes o reservar por internet? Cuándo compensa hacerlo por tu cuenta y cuándo una agencia local te ahorra dinero, tiempo y disgustos."
+    },
+    {
+      "slug": "como-elegir-tu-primer-crucero",
+      "categoria": "antes-de-ir",
+      "fecha": "2026-09-17",
+      "orden": 4,
+      "minutos": 7,
+      "imagen": "/img/destinos/crucero.webp",
+      "titulo": "Cómo elegir tu primer crucero: comparativa por zonas, tipo de barco y camarote",
+      "resumen": "Mediterráneo, Caribe, fiordos o islas atlánticas; barco grande o pequeño; interior o balcón. Una comparativa práctica para acertar a la primera.",
+      "titulo_seo": "Cómo elegir tu primer crucero: comparativa"
+    },
+    {
+      "slug": "luna-de-miel-desde-tenerife",
+      "categoria": "antes-de-ir",
+      "fecha": "2026-09-17",
+      "orden": 3,
+      "minutos": 6,
+      "imagen": "/img/fotos/luna-de-miel.webp",
+      "titulo": "Luna de miel desde Tenerife: cómo planificarla sin agobios",
+      "resumen": "Cuándo empezar, cómo repartir el presupuesto, qué destinos encajan con cada estilo de pareja y los detalles que conviene dejar atados antes de la boda.",
+      "titulo_seo": "Luna de miel desde Tenerife: cómo planificarla"
+    },
+    {
+      "slug": "viajes-de-empresa-entre-islas",
+      "categoria": "trabajo",
+      "fecha": "2026-09-17",
+      "orden": 2,
+      "minutos": 5,
+      "imagen": "/img/fotos/aeropuerto.webp",
+      "titulo": "Viajes de empresa entre islas: cómo dejar de apagar fuegos cada semana",
+      "resumen": "Si tu equipo cruza a Gran Canaria o a La Palma con frecuencia, gestionar cada vuelo por separado sale caro en tiempo y en nervios. Así se organiza de otra manera.",
+      "titulo_seo": "Viajes de trabajo entre islas: cómo organizarlos",
+      "descripcion": "Cómo organizar los viajes de trabajo de tu equipo entre islas Canarias: rutas habituales, facturación centralizada y reservas de última hora."
+    },
+    {
+      "slug": "tecnologia-con-trato-de-siempre",
+      "categoria": "novedades",
+      "fecha": "2026-09-17",
+      "orden": 1,
+      "minutos": 4,
+      "imagen": "/img/fotos/hotel.webp",
+      "titulo": "Tecnología para contestarte antes, personas para aconsejarte",
+      "resumen": "Usamos inteligencia artificial y comparadores propios en el día a día de la agencia. Te contamos para qué sí y para qué no.",
+      "titulo_seo": "IA y trato personal en tu agencia de viajes"
+    }
+  ]
+}

@@ -10,7 +10,7 @@
         <p>{{ include.texto | default: "Cuéntanoslo en dos líneas y te respondemos con una propuesta pensada para ti." }}</p>
       </div>
       <div class="btns">
-        <a href="{{ include.url | default: '/hablamos/' }}" class="btn">Hablamos</a>
+        <a href="{{ include.url | default: '/hablamos/' | relative_url }}" class="btn">Hablamos</a>
         {%- unless include.sin_telefono %}
         {%- assign sede = site.data.agencia.oficinas[0] %}
         <a href="tel:{{ sede.tel }}" class="btn ghost">Llamar: {{ sede.telefono }}</a>

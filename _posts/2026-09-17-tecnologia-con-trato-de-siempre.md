@@ -28,5 +28,5 @@ La tecnología no decide tu viaje. No sabe que tu madre no soporta los vuelos no
 
 Este proyecto de atención al cliente con inteligencia artificial se ha desarrollado con el apoyo del programa Última Milla de la Secretaría de Estado de Turismo, financiado por la Unión Europea – NextGenerationEU.
 
-¿Quieres probarlo? [Escríbenos](/hablamos/) y verás lo rápido que te contestamos… una persona.
+¿Quieres probarlo? [Escríbenos]({{ site.baseurl }}/hablamos/) y verás lo rápido que te contestamos… una persona.
 {: .callout}

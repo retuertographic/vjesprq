@@ -2,8 +2,8 @@
   <div class="stripe" aria-hidden="true"><span></span><span></span><span></span></div>
   <div class="wrap">
     <nav aria-label="Principal">
-      <a href="/" class="brand" aria-label="{{ site.title }}, ir al inicio">
-        <img src="{{ site.data.agencia.logo }}" alt="{{ site.title }}" width="103" height="50">
+      <a href="{{ site.baseurl }}/" class="brand" aria-label="{{ site.title }}, ir al inicio">
+        <img src="{{ site.data.agencia.logo | relative_url }}" alt="{{ site.title }}" width="103" height="50">
       </a>
       <button class="burger" id="burgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -16,7 +16,7 @@
             {%- assign activo = page.url | slice: 0, item.url.size -%}
             {%- if activo == item.url -%}{%- assign activo = true -%}{%- else -%}{%- assign activo = false -%}{%- endif -%}
           {%- endif %}
-        <li><a href="{{ item.url }}"{% if item.boton %} class="btn"{% endif %}{% if activo %} aria-current="page"{% endif %}>{{ item.titulo }}</a></li>
+        <li><a href="{{ item.url | relative_url }}"{% if item.boton %} class="btn"{% endif %}{% if activo %} aria-current="page"{% endif %}>{{ item.titulo }}</a></li>
         {%- endfor %}
       </ul>
     </nav>

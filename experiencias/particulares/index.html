@@ -31,7 +31,7 @@ hero:
 {% for e in site.data.experiencias_particulares %}
 <section class="section{% cycle ' white', '' %}" id="{{ e.id }}">
   <div class="wrap split{% cycle '', ' rev' %}">
-    <div class="split-media reveal"><img src="{{ e.imagen }}" alt="{{ e.alt }}" loading="lazy"></div>
+    <div class="split-media reveal"><img src="{{ e.imagen | relative_url }}" alt="{{ e.alt }}" loading="lazy"></div>
     <div class="reveal">
       <span class="eyebrow">{{ e.clasico }}</span>
       <h2>{{ e.titulo }}</h2>
@@ -41,7 +41,7 @@ hero:
         <li>{{ punto }}</li>
         {%- endfor %}
       </ul>
-      <a href="/hablamos/?tipo=particular&amp;interes={{ e.id }}" class="btn">Quiero información</a>
+      <a href="{{ site.baseurl }}/hablamos/?tipo=particular&amp;interes={{ e.id }}" class="btn">Quiero información</a>
     </div>
   </div>
 </section>

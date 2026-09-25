@@ -1,7 +1,8 @@
 # Configuración de Jekyll (GitHub Pages lo compila automáticamente al hacer push a main)
 title: Viajes Parque
 description: Agencia de viajes en Tenerife con oficinas en Santa Cruz y Tegueste.
-url: https://www.viajesparque.com
+url: https://retuertographic.github.io
+baseurl: /vjesprq   # vaciar ("") al volver a usar el dominio www.viajesparque.com
 lang: es
 locale: es_ES
 timezone: Atlantic/Canary

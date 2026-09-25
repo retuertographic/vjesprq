@@ -15,9 +15,9 @@
 </main>
 
 {% include footer.html %}
-<script src="/assets/site-common.js"></script>
+<script src="{{ site.baseurl }}/assets/site-common.js"></script>
 {%- for s in page.scripts %}
-<script src="{{ s }}"></script>
+<script src="{{ s | relative_url }}"></script>
 {%- endfor %}
 </body>
 </html>

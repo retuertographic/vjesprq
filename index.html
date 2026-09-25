@@ -8,14 +8,14 @@ preload: /img/fotos/atardecer-avion.webp
 schema_agencia: true
 ---
 <section class="hero">
-  <div class="hero-media"><img src="/img/fotos/atardecer-avion.webp" alt="" width="1600" height="1071"></div>
+  <div class="hero-media"><img src="{{ site.baseurl }}/img/fotos/atardecer-avion.webp" alt="" width="1600" height="1071"></div>
   <div class="wrap">
     <span class="eyebrow light">Agencia de viajes en Tenerife</span>
     <h1>Tu agencia de viajes <em>de toda la vida</em></h1>
     <p class="lead">Con el trato de siempre y, ahora, con tecnología que nos ayuda a responderte todavía más rápido y mejor. Cuéntanos qué viaje tienes en la cabeza: nosotros nos encargamos del resto.</p>
     <div class="hero-actions">
-      <a href="/hablamos/" class="btn">Cuéntanos tu viaje</a>
-      <a href="/experiencias/" class="btn light">Ver experiencias</a>
+      <a href="{{ site.baseurl }}/hablamos/" class="btn">Cuéntanos tu viaje</a>
+      <a href="{{ site.baseurl }}/experiencias/" class="btn light">Ver experiencias</a>
     </div>
     <div class="hero-badges">
       <span><i style="background:var(--coral)"></i>Dos oficinas: Santa Cruz y Tegueste</span>
@@ -40,7 +40,7 @@ schema_agencia: true
 <!-- Por qué una agencia local -->
 <section class="section white">
   <div class="wrap split">
-    <div class="split-media reveal"><img src="/img/destinos/anaga.webp" alt="Costa de Chinamada, en el macizo de Anaga (Tenerife)" loading="lazy" width="1400" height="788"></div>
+    <div class="split-media reveal"><img src="{{ site.baseurl }}/img/destinos/anaga.webp" alt="Costa de Chinamada, en el macizo de Anaga (Tenerife)" loading="lazy" width="1400" height="788"></div>
     <div class="reveal">
       <span class="eyebrow">Quiénes te acompañamos</span>
       <h2>Una agencia de aquí, con puerta a la calle</h2>
@@ -50,7 +50,7 @@ schema_agencia: true
         <li>Si algo se tuerce en destino, llamas a alguien que ya conoce tu reserva.</li>
         <li>Como agencia asociada al Grupo GEA, accedemos a las tarifas y proveedores de una gran red.</li>
       </ul>
-      <a href="/quienes-te-acompanamos/" class="btn ghost">Conoce al equipo</a>
+      <a href="{{ site.baseurl }}/quienes-te-acompanamos/" class="btn ghost">Conoce al equipo</a>
     </div>
   </div>
 </section>
@@ -64,10 +64,10 @@ schema_agencia: true
       <p>Europa a pocas horas, Asia para ir sin prisas, América para cruzar el charco y África para no volver igual. Elige continente y te enseñamos por dónde empezar.</p>
     </div>
     <div class="continents">
-      <a class="continent reveal" href="/destinos/?continente=europa"><img src="/img/destinos/santorini.webp" alt="Santorini, Grecia" loading="lazy" width="1400" height="1050"><span><small>Santorini, Lisboa, Islandia…</small>Europa</span></a>
-      <a class="continent reveal" href="/destinos/?continente=asia"><img src="/img/destinos/kyoto.webp" alt="Kioto, Japón" loading="lazy" width="1400" height="1050"><span><small>Japón, Tailandia, Maldivas…</small>Asia</span></a>
-      <a class="continent reveal" href="/destinos/?continente=america"><img src="/img/destinos/machu-picchu.webp" alt="Machu Picchu, Perú" loading="lazy" width="1400" height="1050"><span><small>Perú, Nueva York, Cuba…</small>América</span></a>
-      <a class="continent reveal" href="/destinos/?continente=africa"><img src="/img/destinos/serengeti.webp" alt="Amanecer en el Serengeti, Tanzania" loading="lazy" width="1400" height="1050"><span><small>Tanzania, Marruecos…</small>África</span></a>
+      <a class="continent reveal" href="{{ site.baseurl }}/destinos/?continente=europa"><img src="{{ site.baseurl }}/img/destinos/santorini.webp" alt="Santorini, Grecia" loading="lazy" width="1400" height="1050"><span><small>Santorini, Lisboa, Islandia…</small>Europa</span></a>
+      <a class="continent reveal" href="{{ site.baseurl }}/destinos/?continente=asia"><img src="{{ site.baseurl }}/img/destinos/kyoto.webp" alt="Kioto, Japón" loading="lazy" width="1400" height="1050"><span><small>Japón, Tailandia, Maldivas…</small>Asia</span></a>
+      <a class="continent reveal" href="{{ site.baseurl }}/destinos/?continente=america"><img src="{{ site.baseurl }}/img/destinos/machu-picchu.webp" alt="Machu Picchu, Perú" loading="lazy" width="1400" height="1050"><span><small>Perú, Nueva York, Cuba…</small>América</span></a>
+      <a class="continent reveal" href="{{ site.baseurl }}/destinos/?continente=africa"><img src="{{ site.baseurl }}/img/destinos/serengeti.webp" alt="Amanecer en el Serengeti, Tanzania" loading="lazy" width="1400" height="1050"><span><small>Tanzania, Marruecos…</small>África</span></a>
     </div>
   </div>
 </section>
@@ -130,7 +130,7 @@ schema_agencia: true
       {% include tarjeta-articulo.html post=p %}
       {%- endfor %}
     </div>
-    <p class="center mt-l"><a href="/diario-de-viaje/" class="btn ghost">Ir al diario de viaje</a></p>
+    <p class="center mt-l"><a href="{{ site.baseurl }}/diario-de-viaje/" class="btn ghost">Ir al diario de viaje</a></p>
   </div>
 </section>
 

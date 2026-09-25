@@ -43,5 +43,5 @@ Cuando la reunión de mañana surge hoy, basta con una llamada o un correo.
 1. Decide cómo queréis recibir la facturación (por viaje, mensual, por departamento).
 1. Comparte esa información con tu agencia y fija un canal para urgencias.
 
-Si tu empresa se mueve entre islas, [conoce cómo trabajamos con empresas](/experiencias/empresas/) o [cuéntanos sobre tu equipo](/hablamos/?tipo=empresa).
+Si tu empresa se mueve entre islas, [conoce cómo trabajamos con empresas]({{ site.baseurl }}/experiencias/empresas/) o [cuéntanos sobre tu equipo]({{ site.baseurl }}/hablamos/?tipo=empresa).
 {: .callout}

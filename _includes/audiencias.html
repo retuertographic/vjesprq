@@ -1,8 +1,8 @@
 {%- comment -%} Tarjetas de los tres públicos. Parámetro: etiqueta (h2 o h3) {%- endcomment -%}
 {%- assign tag = include.etiqueta | default: "h3" -%}
 <div class="grid c3">
-  <a class="audience reveal" href="/experiencias/particulares/">
-    <img src="{{ include.img1 | default: '/img/fotos/tour-guiado.webp' }}" alt="" loading="lazy">
+  <a class="audience reveal" href="{{ site.baseurl }}/experiencias/particulares/">
+    <img src="{{ include.img1 | default: '/img/fotos/tour-guiado.webp' | relative_url }}" alt="" loading="lazy">
     <div class="in">
       <div class="num" style="background:var(--coral)">1</div>
       <{{ tag }} class="aud-title">Particulares</{{ tag }}>
@@ -11,8 +11,8 @@
       <span class="more">Ver experiencias</span>
     </div>
   </a>
-  <a class="audience reveal" href="/experiencias/empresas/">
-    <img src="/img/fotos/viaje-negocios.webp" alt="" loading="lazy">
+  <a class="audience reveal" href="{{ site.baseurl }}/experiencias/empresas/">
+    <img src="{{ site.baseurl }}/img/fotos/viaje-negocios.webp" alt="" loading="lazy">
     <div class="in">
       <div class="num" style="background:var(--aqua)">2</div>
       <{{ tag }} class="aud-title">Empresas</{{ tag }}>
@@ -21,8 +21,8 @@
       <span class="more">Entre islas, sin perder el vuelo</span>
     </div>
   </a>
-  <a class="audience reveal" href="/experiencias/instituciones/">
-    <img src="/img/fotos/avion-pista.webp" alt="" loading="lazy">
+  <a class="audience reveal" href="{{ site.baseurl }}/experiencias/instituciones/">
+    <img src="{{ site.baseurl }}/img/fotos/avion-pista.webp" alt="" loading="lazy">
     <div class="in">
       <div class="num" style="background:var(--yellow)">3</div>
       <{{ tag }} class="aud-title">Instituciones</{{ tag }}>

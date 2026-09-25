@@ -4,7 +4,7 @@
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <img src="{{ a.logo }}" alt="{{ a.nombre }}" width="132" height="64" loading="lazy">
+        <img src="{{ a.logo | relative_url }}" alt="{{ a.nombre }}" width="132" height="64" loading="lazy">
         <p>La agencia de viajes de toda la vida en Tenerife: dos oficinas, un equipo con nombre y apellido y viajes pensados para ti.</p>
         <div class="foot-social">
           <a href="{{ a.facebook }}" target="_blank" rel="noopener" aria-label="{{ a.nombre }} en Facebook">
@@ -15,12 +15,12 @@
       <div>
         <h4>Explora</h4>
         <ul>
-          <li><a href="/quienes-te-acompanamos/">Quiénes te acompañamos</a></li>
-          <li><a href="/experiencias/particulares/">Para particulares</a></li>
-          <li><a href="/experiencias/empresas/">Para empresas</a></li>
-          <li><a href="/experiencias/instituciones/">Para instituciones</a></li>
-          <li><a href="/destinos/">Destinos</a></li>
-          <li><a href="/diario-de-viaje/">Diario de viaje</a></li>
+          <li><a href="{{ site.baseurl }}/quienes-te-acompanamos/">Quiénes te acompañamos</a></li>
+          <li><a href="{{ site.baseurl }}/experiencias/particulares/">Para particulares</a></li>
+          <li><a href="{{ site.baseurl }}/experiencias/empresas/">Para empresas</a></li>
+          <li><a href="{{ site.baseurl }}/experiencias/instituciones/">Para instituciones</a></li>
+          <li><a href="{{ site.baseurl }}/destinos/">Destinos</a></li>
+          <li><a href="{{ site.baseurl }}/diario-de-viaje/">Diario de viaje</a></li>
         </ul>
       </div>
       {%- for o in a.oficinas %}
@@ -39,17 +39,17 @@
       {%- endfor %}
     </div>
     <div class="foot-funding">
-      <img src="/img/marca/ultima-milla-financiacion.webp" alt="Financiado por la Unión Europea – NextGenerationEU. Plan de Recuperación, Transformación y Resiliencia. Gobierno de España, Ministerio de Industria, Comercio y Turismo" width="600" height="57" loading="lazy">
-      <img src="/img/marca/kit-digital.webp" alt="Programa Kit Digital, cofinanciado por los fondos Next Generation EU del Mecanismo de Recuperación y Resiliencia" width="380" height="62" loading="lazy">
+      <img src="{{ site.baseurl }}/img/marca/ultima-milla-financiacion.webp" alt="Financiado por la Unión Europea – NextGenerationEU. Plan de Recuperación, Transformación y Resiliencia. Gobierno de España, Ministerio de Industria, Comercio y Turismo" width="600" height="57" loading="lazy">
+      <img src="{{ site.baseurl }}/img/marca/kit-digital.webp" alt="Programa Kit Digital, cofinanciado por los fondos Next Generation EU del Mecanismo de Recuperación y Resiliencia" width="380" height="62" loading="lazy">
       <p>{{ a.razon_social }} ha desarrollado su sistema de atención al cliente con inteligencia artificial con el apoyo del programa Última Milla (Secretaría de Estado de Turismo), financiado por la Unión Europea – NextGenerationEU.</p>
     </div>
     <div class="foot-bottom">
       <span>© {{ site.time | date: "%Y" }} {{ a.razon_social }} · NIF {{ a.nif }}</span>
       <nav aria-label="Legal">
-        <a href="/aviso-legal/">Aviso legal</a>
-        <a href="/politica-de-privacidad/">Política de privacidad</a>
-        <a href="/politica-de-cookies/">Política de cookies</a>
-        <a href="/creditos/">Créditos de imágenes</a>
+        <a href="{{ site.baseurl }}/aviso-legal/">Aviso legal</a>
+        <a href="{{ site.baseurl }}/politica-de-privacidad/">Política de privacidad</a>
+        <a href="{{ site.baseurl }}/politica-de-cookies/">Política de cookies</a>
+        <a href="{{ site.baseurl }}/creditos/">Créditos de imágenes</a>
       </nav>
     </div>
   </div>

@@ -6,7 +6,7 @@
       {% include migas.html %}
       {%- endunless %}
       {%- if h.eyebrow_url %}
-      <a class="eyebrow light" href="{{ h.eyebrow_url }}">{{ h.eyebrow }}</a>
+      <a class="eyebrow light" href="{{ h.eyebrow_url | relative_url }}">{{ h.eyebrow }}</a>
       {%- else %}
       <span class="eyebrow light">{{ h.eyebrow }}</span>
       {%- endif %}
@@ -17,7 +17,7 @@
       {%- endif %}
     </div>
     {%- if h.imagen %}
-    <div class="ph-img"><img src="{{ h.imagen }}" alt="{{ h.alt }}"></div>
+    <div class="ph-img"><img src="{{ h.imagen | relative_url }}" alt="{{ h.alt }}"></div>
     {%- endif %}
   </div>
 </section>

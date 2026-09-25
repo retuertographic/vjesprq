@@ -19,12 +19,12 @@ hero:
     <div class="dest-grid" id="destGrid">
       {%- for d in site.data.destinos %}
       <article class="dest reveal" data-valor="{{ d.continente }}">
-        <div class="ph"><img src="/img/destinos/{{ d.imagen }}.webp" alt="{{ d.alt }}" loading="lazy" width="1400" height="1050"><span class="cont">{{ site.data.continentes[d.continente] }}</span></div>
+        <div class="ph"><img src="{{ site.baseurl }}/img/destinos/{{ d.imagen }}.webp" alt="{{ d.alt }}" loading="lazy" width="1400" height="1050"><span class="cont">{{ site.data.continentes[d.continente] }}</span></div>
         <div class="body">
           <h3>{{ d.nombre }}</h3>
           <div class="where">{{ d.pais }}</div>
           <p>{{ d.texto }}</p>
-          <a class="more" href="/hablamos/?destino={{ d.nombre | uri_escape }}">Quiero una propuesta para {{ d.nombre }}</a>
+          <a class="more" href="{{ site.baseurl }}/hablamos/?destino={{ d.nombre | uri_escape }}">Quiero una propuesta para {{ d.nombre }}</a>
         </div>
       </article>
       {%- endfor %}
@@ -42,7 +42,7 @@ hero:
 
 <section class="section white">
   <div class="wrap split">
-    <div class="split-media reveal"><img src="/img/destinos/anaga.webp" alt="Acantilados de Anaga, Tenerife" loading="lazy"></div>
+    <div class="split-media reveal"><img src="{{ site.baseurl }}/img/destinos/anaga.webp" alt="Acantilados de Anaga, Tenerife" loading="lazy"></div>
     <div class="reveal">
       <span class="eyebrow">Desde Tenerife</span>
       <h2>Salir de la isla tiene su ciencia</h2>
@@ -52,7 +52,7 @@ hero:
         <li>Márgenes de enlace pensados, no al límite.</li>
         <li>Documentación y requisitos de entrada revisados.</li>
       </ul>
-      <a href="/diario-de-viaje/?categoria=antes-de-ir" class="btn ghost">Consejos antes de viajar</a>
+      <a href="{{ site.baseurl }}/diario-de-viaje/?categoria=antes-de-ir" class="btn ghost">Consejos antes de viajar</a>
     </div>
   </div>
 </section>

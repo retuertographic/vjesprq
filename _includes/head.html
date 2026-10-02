@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ titulo_head }}</title>
 <meta name="description" content="{{ descripcion }}">
-{%- if page.noindex %}
+{%- if page.noindex or site.noindex %}
 <meta name="robots" content="noindex">
 {%- else %}
 <link rel="canonical" href="{{ page.url | absolute_url }}">

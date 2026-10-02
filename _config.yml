@@ -3,6 +3,8 @@ title: Viajes Parque
 description: Agencia de viajes en Tenerife con oficinas en Santa Cruz y Tegueste.
 url: https://retuertographic.github.io
 baseurl: /vjesprq   # vaciar ("") al volver a usar el dominio www.viajesparque.com
+# Web provisional: pide a los buscadores que no la indexen. Quitar (o poner false) al publicar en el dominio.
+noindex: true
 lang: es
 locale: es_ES
 timezone: Atlantic/Canary

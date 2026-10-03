@@ -6,9 +6,21 @@ const EMAILJS_SERVICE_ID = '';
 const EMAILJS_TEMPLATE_ID = '';
 const DESTINO_CORREO = 'gestion@viajesparque.com';
 
+/* La librería de EmailJS solo se descarga si hay claves. Versión fija con comprobación de integridad (SRI):
+   al actualizarla, cambiar también el hash (sha384 de dist/email.min.js). */
+const EMAILJS_SRC = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js';
+const EMAILJS_SRI = 'sha384-SALc35EccAf6RzGw4iNsyj7kTPr33K7RoGzYu+7heZhT8s0GZouafRiCg1qy44AS';
+
 (function () {
-  const emailjsReady = window.emailjs && EMAILJS_PUBLIC_KEY && EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID;
-  if (emailjsReady) emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  let emailjsReady = false;
+  if (EMAILJS_PUBLIC_KEY && EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID) {
+    const s = document.createElement('script');
+    s.src = EMAILJS_SRC;
+    s.integrity = EMAILJS_SRI;
+    s.crossOrigin = 'anonymous';
+    s.onload = () => { emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); emailjsReady = true; };
+    document.head.appendChild(s);
+  }
 
   /* ---- Pestañas ---- */
   const tabs = [...document.querySelectorAll('[role="tab"]')];

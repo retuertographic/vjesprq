@@ -59,6 +59,7 @@ resumen: "Entradilla que aparece en la tarjeta y bajo el título."
 categoria: antes-de-ir        # destinos | antes-de-ir | historias | trabajo | novedades
 minutos: 5
 image: /img/fotos/hotel.webp
+modificado: 2026-10-15      # opcional: fecha de la última revisión (dateModified)
 ---
 
 Texto en **Markdown**. Para un recuadro destacado:

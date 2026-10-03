@@ -1,0 +1,36 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+{%- assign a = site.data.agencia -%}
+# {{ a.nombre }}
+
+> {{ a.nombre }} ({{ a.razon_social }}) es una agencia de viajes de Tenerife con dos oficinas, en Santa Cruz de Tenerife y en Tegueste. Organiza viajes a medida para particulares, viajes de empresa entre islas Canarias y desplazamientos de grupo para clubes deportivos y ayuntamientos. Es agencia asociada al Grupo GEA.
+
+## Contacto
+
+{% for o in a.oficinas -%}
+- {{ o.tipo }} — {{ o.nombre }}: {{ o.calle }}, {{ o.cp }} {{ o.localidad }}. Teléfono {{ o.telefono }}.
+{% endfor -%}
+- Correo: {{ a.email }}
+- Horario: {{ a.horario | join: "; " }}
+- Formulario de contacto: {{ '/hablamos/' | absolute_url }}
+
+## Servicios
+
+- [Particulares]({{ '/experiencias/particulares/' | absolute_url }}): {% for e in site.data.experiencias_particulares %}{{ e.clasico | downcase }}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+- [Empresas]({{ '/experiencias/empresas/' | absolute_url }}): vuelos entre islas recurrentes, facturación centralizada, reservas de última hora e interlocutor fijo.
+- [Instituciones]({{ '/experiencias/instituciones/' | absolute_url }}): viajes de grupo para equipos deportivos y entidades públicas, con calendario de temporada y facturación adaptada.
+- [Destinos]({{ '/destinos/' | absolute_url }}): selección de destinos por continente; no es un catálogo cerrado.
+
+## Diario de viaje
+
+{% for p in site.posts -%}
+- [{{ p.title }}]({{ p.url | absolute_url }}): {{ p.description }}
+{% endfor %}
+## Más información
+
+- [Quiénes somos]({{ '/quienes-te-acompanamos/' | absolute_url }})
+- [Aviso legal]({{ '/aviso-legal/' | absolute_url }})
+- [Política de privacidad]({{ '/politica-de-privacidad/' | absolute_url }})

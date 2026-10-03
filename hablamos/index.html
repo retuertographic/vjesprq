@@ -39,6 +39,7 @@ scripts:
             <div class="field full"><label for="p_viaje">¿Qué viaje tienes en la cabeza?</label><textarea id="p_viaje" name="mensaje" required placeholder="Destino (o idea), fechas aproximadas, con quién viajas…"></textarea><span class="err" id="p_viaje_err"></span></div>
             <label class="check"><input type="checkbox" id="p_ok" name="privacidad" required><span>He leído la <a href="{{ site.baseurl }}/politica-de-privacidad/" target="_blank">política de privacidad</a> y acepto que Viajes Parque use estos datos para responder a mi consulta.</span></label>
             <span class="err" id="p_ok_err"></span>
+            {% include info-privacidad.html %}
             <input class="hp" type="text" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
           </div>
           <div class="form-actions"><button class="btn" type="submit">Enviar consulta</button></div>
@@ -65,6 +66,7 @@ scripts:
             <div class="field full"><label for="e_msg">Rutas habituales y lo que necesitáis</label><textarea id="e_msg" name="mensaje" required placeholder="Ej.: Tenerife Norte – Gran Canaria dos veces por semana, hotel una noche, factura mensual…"></textarea><span class="err" id="e_msg_err"></span></div>
             <label class="check"><input type="checkbox" id="e_ok" name="privacidad" required><span>He leído la <a href="{{ site.baseurl }}/politica-de-privacidad/" target="_blank">política de privacidad</a> y acepto que Viajes Parque use estos datos para responder a mi consulta.</span></label>
             <span class="err" id="e_ok_err"></span>
+            {% include info-privacidad.html %}
             <input class="hp" type="text" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
           </div>
           <div class="form-actions"><button class="btn" type="submit">Enviar consulta</button><a href="tel:{{ site.data.agencia.oficinas[0].tel }}">o llámanos: {{ site.data.agencia.oficinas[0].telefono }}</a></div>

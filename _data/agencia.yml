@@ -5,6 +5,10 @@ nif: B38404927
 email: gestion@viajesparque.com
 email_rgpd: lopd-rgpd@viajesparque.com
 facebook: https://www.facebook.com/ViajesParque/
+# Fichas de Google Business de las oficinas (se usan en sameAs de los datos estructurados)
+google_business:
+  - https://share.google/Q09MsuS8ju8zdvYGu
+  - https://share.google/wDU3QvfWgkbUknT8t
 logo: /img/marca/logo-viajes-parque-marino.webp
 
 horario:

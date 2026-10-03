@@ -14,7 +14,7 @@
   "email": "{{ a.email }}",
   "telephone": "{{ sede.tel }}",
   "areaServed": "Islas Canarias",
-  "sameAs": ["{{ a.facebook }}"],
+  "sameAs": {{ a.google_business | unshift: a.facebook | jsonify }},
   "address": {"@type": "PostalAddress", "streetAddress": {{ sede.calle_schema | jsonify }}, "postalCode": "{{ sede.cp }}",
     "addressLocality": {{ sede.localidad | jsonify }}, "addressRegion": "Santa Cruz de Tenerife", "addressCountry": "ES"},
   "openingHoursSpecification": [

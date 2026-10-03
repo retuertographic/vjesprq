@@ -18,6 +18,7 @@ hero:
       <button type="button" data-valor="{{ c[0] }}" aria-pressed="false" title="{{ c[1].desc }}">{{ c[1].nombre }}</button>
       {%- endfor %}
     </div>
+    <h2 class="sr-only">Artículos</h2>
     <p class="sr-only" aria-live="polite"></p>
     <div class="post-grid" id="postGrid">
       {%- for p in site.posts %}

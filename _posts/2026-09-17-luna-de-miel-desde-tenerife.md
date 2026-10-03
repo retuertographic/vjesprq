@@ -1,6 +1,6 @@
 ---
 title: "Luna de miel desde Tenerife: cómo planificarla sin agobios"
-title_seo: "Luna de miel desde Tenerife: cómo planificarla"
+title_seo: "Planificar tu luna de miel desde Tenerife"
 description: "Cuándo empezar, cómo repartir el presupuesto, qué destinos encajan con cada estilo de pareja y los detalles que conviene dejar atados antes de la boda."
 resumen: "Cuándo empezar, cómo repartir el presupuesto, qué destinos encajan con cada estilo de pareja y los detalles que conviene dejar atados antes de la boda."
 date: 2026-09-17 00:03:00 +0100

@@ -13,7 +13,7 @@
         </div>
       </div>
       <div>
-        <h4>Explora</h4>
+        <h2 class="foot-title">Explora</h2>
         <ul>
           <li><a href="{{ site.baseurl }}/quienes-te-acompanamos/">Quiénes te acompañamos</a></li>
           <li><a href="{{ site.baseurl }}/experiencias/particulares/">Para particulares</a></li>
@@ -25,7 +25,7 @@
       </div>
       {%- for o in a.oficinas %}
       <div>
-        <h4>Oficina {{ o.nombre | remove: " de Tenerife" }}{% if forloop.first %} (sede){% endif %}</h4>
+        <h2 class="foot-title">Oficina {{ o.nombre | remove: " de Tenerife" }}{% if forloop.first %} (sede){% endif %}</h2>
         <ul>
           <li>{{ o.calle }}<br>{{ o.cp }} {{ o.localidad }}</li>
           <li><a href="tel:{{ o.tel }}">{{ o.telefono }}</a></li>

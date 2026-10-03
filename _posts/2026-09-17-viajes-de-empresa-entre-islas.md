@@ -1,6 +1,6 @@
 ---
 title: "Viajes de empresa entre islas: cómo dejar de apagar fuegos cada semana"
-title_seo: "Viajes de trabajo entre islas: cómo organizarlos"
+title_seo: "Cómo organizar viajes de trabajo entre islas"
 description: "Cómo organizar los viajes de trabajo de tu equipo entre islas Canarias: rutas habituales, facturación centralizada y reservas de última hora."
 resumen: "Si tu equipo cruza a Gran Canaria o a La Palma con frecuencia, gestionar cada vuelo por separado sale caro en tiempo y en nervios. Así se organiza de otra manera."
 date: 2026-09-17 00:02:00 +0100

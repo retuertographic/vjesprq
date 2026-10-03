@@ -1,6 +1,6 @@
 ---
 title: "Viajes pensados para ti (y para los tuyos)"
-title_seo: "Viajes a medida, luna de miel y cruceros en Tenerife"
+title_seo: "Viajes a medida, lunas de miel y cruceros"
 miga: "Particulares"
 description: "Paquetes a medida, vuelos y hoteles, tours guiados, asesoría, lunas de miel y cruceros desde Tenerife, con atención personal en Santa Cruz y Tegueste."
 image: /img/fotos/luna-de-miel.webp
@@ -41,7 +41,7 @@ hero:
         <li>{{ punto }}</li>
         {%- endfor %}
       </ul>
-      <a href="{{ site.baseurl }}/hablamos/?tipo=particular&amp;interes={{ e.id }}" class="btn">Quiero información</a>
+      <a href="{{ site.baseurl }}/hablamos/?tipo=particular&amp;interes={{ e.id }}" class="btn">Quiero información<span class="sr-only"> sobre {{ e.titulo }}</span></a>
     </div>
   </div>
 </section>

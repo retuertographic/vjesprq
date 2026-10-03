@@ -15,6 +15,7 @@ hero:
       <button type="button" data-valor="{{ c[0] }}" aria-pressed="false">{{ c[1] }}</button>
       {%- endfor %}
     </div>
+    <h2 class="sr-only">Destinos destacados</h2>
     <p class="sr-only" aria-live="polite"></p>
     <div class="dest-grid" id="destGrid">
       {%- for d in site.data.destinos %}

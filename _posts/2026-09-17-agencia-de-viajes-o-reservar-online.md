@@ -1,6 +1,6 @@
 ---
 title: "¿Agencia de viajes o reservar por internet? Lo que de verdad cambia"
-title_seo: "Agencia de viajes o reservar online: qué compensa"
+title_seo: "¿Agencia o reservar online? Qué compensa"
 description: "¿Agencia de viajes o reservar por internet? Cuándo compensa hacerlo por tu cuenta y cuándo una agencia local te ahorra dinero, tiempo y disgustos."
 resumen: "Reservar online parece más barato y más rápido. A veces lo es. Te contamos, sin rodeos, en qué casos compensa hacerlo tú y en cuáles te ahorras dinero y disgustos con una agencia."
 date: 2026-09-17 00:05:00 +0100

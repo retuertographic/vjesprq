@@ -42,22 +42,12 @@ const EMAILJS_SRI = 'sha384-SALc35EccAf6RzGw4iNsyj7kTPr33K7RoGzYu+7heZhT8s0GZoua
     });
   });
 
-  /* ---- Parámetros de la URL: ?tipo=empresa|institucion, ?destino=, ?interes= ---- */
+  /* ---- Parámetros de la URL: ?tipo=particular|empresa|institucion, ?destino= ---- */
   const params = new URLSearchParams(location.search);
   const tipo = params.get('tipo');
-  if (tipo === 'empresa' || tipo === 'institucion') {
-    selectTab(document.getElementById('tab-empresa'));
-    if (tipo === 'institucion') document.getElementById('e_tipo').value = 'Club o equipo deportivo';
-  }
-  const INTERESES = {
-    'a-tu-manera': 'un viaje a medida', 'vuelos-y-hoteles': 'vuelos y hotel', 'tours-guiados': 'un circuito o tour guiado',
-    'asesoria-de-viaje': 'asesoramiento para un viaje', 'luna-de-miel': 'nuestra luna de miel', 'cruceros': 'un crucero',
-  };
+  if (tipo === 'empresa' || tipo === 'institucion') selectTab(document.getElementById('tab-empresa'));
   const destino = (params.get('destino') || '').slice(0, 60).replace(/[<>]/g, '');
-  const interes = INTERESES[params.get('interes')];
-  const viaje = document.getElementById('p_viaje');
-  if (destino) viaje.value = `Me interesa un viaje a ${destino}. `;
-  else if (interes) viaje.value = `Me interesa ${interes}. `;
+  if (destino) document.getElementById('p_destino').value = destino;
 
   /* ---- Validación ---- */
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -91,9 +81,9 @@ const EMAILJS_SRI = 'sha384-SALc35EccAf6RzGw4iNsyj7kTPr33K7RoGzYu+7heZhT8s0GZoua
 
   function summary(data) {
     const labels = {
-      tipo_consulta: 'Tipo de consulta', entidad: 'Empresa o entidad', tipo_entidad: 'Tipo de entidad', nombre: 'Nombre',
-      email: 'Correo', telefono: 'Teléfono', oficina: 'Oficina preferida', personas: 'Personas que viajan',
-      frecuencia: 'Frecuencia', mensaje: 'Mensaje',
+      tipo_consulta: 'Tipo de consulta', entidad: 'Entidad', nombre: 'Nombre', telefono: 'Teléfono', email: 'Correo',
+      destino: 'Destino aproximado', fechas: 'Fechas', viajeros: 'Viajeros', presupuesto: 'Presupuesto orientativo',
+      tipo_viaje: 'Tipo de viaje', frecuencia: 'Frecuencia', mensaje: 'Mensaje',
     };
     return Object.entries(labels).filter(([k]) => data[k]).map(([k, l]) => `${l}: ${data[k]}`).join('\n');
   }

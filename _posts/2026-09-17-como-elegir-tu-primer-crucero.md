@@ -4,7 +4,7 @@ title_seo: "Cómo elegir tu primer crucero: comparativa"
 description: "Mediterráneo, Caribe, fiordos o islas atlánticas; barco grande o pequeño; interior o balcón. Una comparativa práctica para acertar a la primera."
 resumen: "Mediterráneo, Caribe, fiordos o islas atlánticas; barco grande o pequeño; interior o balcón. Una comparativa práctica para acertar a la primera."
 date: 2026-09-17 00:04:00 +0100
-categoria: antes-de-ir
+categoria: cruceros
 minutos: 7
 image: /img/destinos/crucero.webp
 ---
@@ -45,9 +45,26 @@ Un consejo: si te preocupa el mareo, los camarotes en cubiertas intermedias y ha
 
 Normalmente incluye alojamiento, pensión completa en los restaurantes principales y buena parte del entretenimiento a bordo. Suelen pagarse aparte las bebidas (salvo paquete), las excursiones, algunos restaurantes de especialidad y las propinas o cargos de servicio, según la naviera. Pregunta siempre por estos conceptos antes de comparar precios.
 
-## 5. No olvides el antes y el después
+## 5. Según tu presupuesto y tu destino
+
+Una forma rápida de orientarte antes de mirar navieras:
+
+<div class="table-scroll">
+<table>
+  <thead><tr><th>Presupuesto</th><th>Mediterráneo</th><th>Atlántico</th><th>Caribe</th><th>Norte de Europa</th></tr></thead>
+  <tbody>
+    <tr><td>Ajustado</td><td>Camarote interior, fuera de agosto</td><td>Itinerarios que salen o pasan por Canarias</td><td>Difícil: el vuelo pesa mucho en el total</td><td>Mejor esperar a una buena oferta</td></tr>
+    <tr><td>Medio</td><td>Exterior o balcón en temporada alta</td><td>Balcón y más noches</td><td>Interior o exterior, con vuelo incluido</td><td>Interior o exterior en verano</td></tr>
+    <tr><td>Alto</td><td>Barco pequeño o suite</td><td>Grandes travesías</td><td>Balcón y noches de hotel antes y después</td><td>Balcón: aquí es donde más se disfruta</td></tr>
+  </tbody>
+</table>
+</div>
+
+Lo contamos con más detalle en [qué crucero elegir según tu presupuesto y tu destino]({{ site.baseurl }}/diario-de-viaje/que-crucero-elegir/).
+
+## 6. No olvides el antes y el después
 
 Desde Tenerife casi siempre hay que volar al puerto de salida. Recomendamos llegar el día anterior para no depender de un retraso, y reservar los traslados con tiempo. Nosotros coordinamos vuelos, noche de hotel, traslados y excursiones para que solo tengas que embarcar.
 
-¿Dudas entre dos opciones? Tráenos las dos y las comparamos contigo: itinerario, barco, camarote y lo que incluye cada una.
+¿Dudas entre dos opciones? Tráenos las dos y las comparamos contigo: itinerario, barco, camarote y lo que incluye cada una. [Así preparamos tu viaje]({{ site.baseurl }}/experiencias/particulares/).
 {: .callout}

@@ -1,0 +1,17 @@
+{%- comment -%}
+  Entradas del diario relacionadas con una página. Parámetros: categorias (claves separadas por comas), titulo (opcional), fondo ("white" por defecto; "" para fondo claro)
+{%- endcomment -%}
+{%- assign claves = include.categorias | split: "," -%}
+{%- assign rel = site.posts | where_exp: "p", "claves contains p.categoria" -%}
+{%- if rel.size > 0 %}
+<section class="section {{ include.fondo | default: "white" }}">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Del diario</span><h2>{{ include.titulo | default: "Para seguir leyendo" }}</h2></div>
+    <div class="post-grid">
+      {%- for p in rel limit: 3 %}
+      {% include tarjeta-articulo.html post=p %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}

@@ -4,7 +4,7 @@ title_seo: "Planificar tu luna de miel desde Tenerife"
 description: "Cuándo empezar, cómo repartir el presupuesto, qué destinos encajan con cada estilo de pareja y los detalles que conviene dejar atados antes de la boda."
 resumen: "Cuándo empezar, cómo repartir el presupuesto, qué destinos encajan con cada estilo de pareja y los detalles que conviene dejar atados antes de la boda."
 date: 2026-09-17 00:03:00 +0100
-categoria: antes-de-ir
+categoria: cruceros
 minutos: 6
 image: /img/fotos/luna-de-miel.webp
 ---
@@ -39,5 +39,5 @@ Los vuelos de largo radio y el alojamiento suelen llevarse la mayor parte. Nuest
 
 La mayoría de destinos de luna de miel requieren al menos una conexión. Elegir bien el punto de enlace y el margen entre vuelos hace el viaje mucho más cómodo, sobre todo a la ida.
 
-En Viajes Parque organizamos lunas de miel a medida. Venid a vernos a Santa Cruz o a Tegueste, contadnos cómo os imagináis el viaje y nos ponemos con ello.
+En Viajes Parque organizamos lunas de miel a medida. Venid a vernos a Santa Cruz o a Tegueste, contadnos cómo os imagináis el viaje y nos ponemos con ello. [Así preparamos los viajes en pareja]({{ site.baseurl }}/experiencias/particulares/).
 {: .callout}

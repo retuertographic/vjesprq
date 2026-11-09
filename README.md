@@ -15,7 +15,7 @@ Web de [Viajes Parque](https://www.viajesparque.com), agencia de viajes con ofic
 | Tarjetas de los tres públicos | `_includes/audiencias.html` |
 | Iconos | `_data/iconos.yml` y `_includes/icono.html` |
 | Destinos | `_data/destinos.yml` |
-| Las seis experiencias para particulares | `_data/experiencias_particulares.yml` |
+| "Qué viajes preparamos" (Particulares) | `_data/experiencias_particulares.yml` |
 | Categorías del diario | `_data/categorias.yml` |
 | Créditos de fotos | `_data/creditos.json` |
 | Estilos | `assets/site.css` |
@@ -56,7 +56,7 @@ title: "Título largo que aparece como H1"
 title_seo: "Título corto para Google (≤ 55 caracteres)"
 description: "Meta descripción, ≤ 160 caracteres."
 resumen: "Entradilla que aparece en la tarjeta y bajo el título."
-categoria: antes-de-ir        # destinos | antes-de-ir | historias | trabajo | novedades
+categoria: trabajo            # agencia-o-internet | trabajo | destinos | cruceros | grupos
 minutos: 5
 image: /img/fotos/hotel.webp
 modificado: 2026-10-15      # opcional: fecha de la última revisión (dateModified)
@@ -68,7 +68,7 @@ Texto del recuadro.
 {: .callout}
 ```
 
-El artículo aparece automáticamente en el diario, en la portada, en "Sigue leyendo" y en el sitemap. Jekyll no publica artículos con fecha u hora futuras. Los de la categoría "novedades" se escriben en presente y no fechan las iniciativas.
+El artículo aparece automáticamente en el diario, en la portada, en "Sigue leyendo" y en el sitemap. Jekyll no publica artículos con fecha u hora futuras. No se fechan subvenciones ni iniciativas.
 
 ## Ver la web en local
 

@@ -175,6 +175,7 @@ h1,h2,h3,h4{font-family:'Nunito',system-ui,sans-serif;line-height:1.12;color:var
 
 /* ---------- Tarjetas ---------- */
 .grid{display:grid;gap:22px;}
+.grid > *{min-width:0;}
 .grid.c2{grid-template-columns:repeat(2,1fr);}
 .grid.c3{grid-template-columns:repeat(3,1fr);}
 .grid.c4{grid-template-columns:repeat(4,1fr);}
@@ -187,6 +188,7 @@ h1,h2,h3,h4{font-family:'Nunito',system-ui,sans-serif;line-height:1.12;color:var
   transition:transform .25s ease, box-shadow .25s ease;
 }
 .card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+.card .step{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-family:'Nunito',sans-serif;font-weight:900;}
 .card h2,.card h3{font-size:1.28rem;font-weight:800;margin:14px 0 8px;}
 .card p{color:var(--muted);font-size:.98rem;}
 .card .tag{font-size:.8rem;font-weight:700;color:var(--muted);font-style:italic;margin-top:12px;display:block;}
@@ -252,7 +254,8 @@ h1,h2,h3,h4{font-family:'Nunito',system-ui,sans-serif;line-height:1.12;color:var
 }
 
 /* Números / confianza */
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.facts{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+@media (max-width:1100px){.facts{grid-template-columns:repeat(3,1fr);}}
 .fact{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-sm);padding:24px;}
 .fact strong{display:block;font-family:'Nunito',sans-serif;font-size:1.3rem;font-weight:900;color:#fff;margin-bottom:4px;}
 .fact span{color:#B9C5DE;font-size:.95rem;}

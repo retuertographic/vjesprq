@@ -1,12 +1,12 @@
 ---
-title: "Cuéntanos qué viaje tienes en la cabeza"
+title: "Cuéntanos tu viaje"
 head_title: "Contacto · Viajes Parque en Santa Cruz y Tegueste"
 miga: "Hablamos"
 description: "Contacta con Viajes Parque: formulario para particulares, vía directa para empresas y oficinas en Santa Cruz de Tenerife (922 215 012) y Tegueste."
 image: /img/fotos/tarjeta-embarque.webp
 hero:
   eyebrow: "Hablamos"
-  texto: "Escríbenos, llámanos o pásate por cualquiera de nuestras dos oficinas. Contestamos personas, y lo hacemos rápido."
+  texto: "Te contestamos cuanto antes. Si lo prefieres, llámanos o pasa por una de nuestras dos oficinas."
 redirect_from:
   - /contacto/
 scripts:
@@ -17,26 +17,28 @@ scripts:
     <div>
       <div class="contact-tabs" role="tablist" aria-label="Tipo de consulta">
         <button type="button" role="tab" id="tab-particular" aria-controls="panel-particular" aria-selected="true">
-          <strong>Viajo por placer</strong>Formulario corto para particulares
+          <strong>Viaje personal</strong>Vacaciones, escapadas, cruceros, lunas de miel
         </button>
         <button type="button" role="tab" id="tab-empresa" aria-controls="panel-empresa" aria-selected="false" tabindex="-1">
-          <strong>¿Viajas por trabajo entre islas?</strong>Vía directa para empresas e instituciones
+          <strong>Empresa o institución</strong>Viajes de trabajo, cursos, equipos y formaciones
         </button>
       </div>
 
       <div class="form-card" role="tabpanel" id="panel-particular" aria-labelledby="tab-particular">
-        <h2>Tu próximo viaje, en dos líneas</h2>
-        <p>Un formulario corto, no un cuestionario de agencia. Con esto ya podemos empezar.</p>
+        <h2>Tu próximo viaje</h2>
+        <p>No hace falta que lo tengas todo claro. Con lo que sepas, empezamos.</p>
         <form id="formParticular" novalidate>
           <input type="hidden" name="tipo_consulta" value="Particular">
           <div class="fields">
             <div class="field"><label for="p_nombre">Nombre</label><input id="p_nombre" name="nombre" autocomplete="name" required><span class="err" id="p_nombre_err"></span></div>
-            <div class="field"><label for="p_email">Correo electrónico</label><input id="p_email" name="email" type="email" autocomplete="email" required><span class="err" id="p_email_err"></span></div>
-            <div class="field"><label for="p_tel">Teléfono <small>(opcional)</small></label><input id="p_tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel"><span class="err" id="p_tel_err"></span></div>
-            <div class="field"><label for="p_oficina">Oficina que prefieres</label>
-              <select id="p_oficina" name="oficina"><option>Me da igual</option><option>Santa Cruz de Tenerife</option><option>Tegueste</option></select></div>
-            <div class="field full"><label for="p_viaje">¿Qué viaje tienes en la cabeza?</label><textarea id="p_viaje" name="mensaje" required placeholder="Destino (o idea), fechas aproximadas, con quién viajas…"></textarea><span class="err" id="p_viaje_err"></span></div>
-            <label class="check"><input type="checkbox" id="p_ok" name="privacidad" required><span>He leído la <a href="{{ site.baseurl }}/politica-de-privacidad/" target="_blank">política de privacidad</a> y acepto que Viajes Parque use estos datos para responder a mi consulta.</span></label>
+            <div class="field"><label for="p_tel">Teléfono</label><input id="p_tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required><span class="err" id="p_tel_err"></span></div>
+            <div class="field"><label for="p_email">Correo electrónico <small>(opcional)</small></label><input id="p_email" name="email" type="email" autocomplete="email"><span class="err" id="p_email_err"></span></div>
+            <div class="field"><label for="p_destino">Destino aproximado</label><input id="p_destino" name="destino" placeholder="Un sitio, una zona o solo una idea"><span class="err" id="p_destino_err"></span></div>
+            <div class="field"><label for="p_fechas">Fechas</label><input id="p_fechas" name="fechas" placeholder="Ej.: segunda quincena de julio, 10 días"><span class="err" id="p_fechas_err"></span></div>
+            <div class="field"><label for="p_viajeros">Número de viajeros</label><input id="p_viajeros" name="viajeros" inputmode="numeric" placeholder="Ej.: 2 adultos y 1 niño"><span class="err" id="p_viajeros_err"></span></div>
+            <div class="field full"><label for="p_presupuesto">Presupuesto orientativo <small>(opcional)</small></label><input id="p_presupuesto" name="presupuesto" placeholder="Por persona o en total, como te resulte más fácil"><span class="err" id="p_presupuesto_err"></span></div>
+            <div class="field full"><label for="p_viaje">¿Qué te gustaría vivir?</label><textarea id="p_viaje" name="mensaje" placeholder="Descansar, conocer una ciudad, celebrar algo, viajar con los niños…"></textarea><span class="err" id="p_viaje_err"></span></div>
+            <label class="check"><input type="checkbox" id="p_ok" name="privacidad" required><span>He leído la <a href="{{ site.baseurl }}/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a> y acepto que Viajes Parque use estos datos para responder a mi consulta.</span></label>
             <span class="err" id="p_ok_err"></span>
             {% include info-privacidad.html %}
             <input class="hp" type="text" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -47,23 +49,21 @@ scripts:
       </div>
 
       <div class="form-card" role="tabpanel" id="panel-empresa" aria-labelledby="tab-empresa" hidden>
-        <h2>Cuéntanos sobre tu equipo</h2>
-        <p>Cuántas personas viajan, con qué frecuencia y entre qué islas. Te respondemos con una propuesta de trabajo.</p>
+        <h2>Cuéntanos cómo viajáis</h2>
+        <p>Qué tipo de viaje, con qué frecuencia y qué os cuesta más organizar. Te respondemos con una propuesta de trabajo.</p>
         <form id="formEmpresa" novalidate>
           <input type="hidden" name="tipo_consulta" value="Empresa / institución">
           <div class="fields">
-            <div class="field"><label for="e_entidad">Empresa o entidad</label><input id="e_entidad" name="entidad" autocomplete="organization" required><span class="err" id="e_entidad_err"></span></div>
-            <div class="field"><label for="e_tipo">Tipo</label>
-              <select id="e_tipo" name="tipo_entidad"><option value="Empresa">Empresa</option><option value="Club o equipo deportivo">Club o equipo deportivo</option><option value="Ayuntamiento o entidad pública">Ayuntamiento o entidad pública</option><option value="Otra">Otra</option></select></div>
+            <div class="field"><label for="e_entidad">Nombre de la entidad</label><input id="e_entidad" name="entidad" autocomplete="organization" required><span class="err" id="e_entidad_err"></span></div>
             <div class="field"><label for="e_nombre">Persona de contacto</label><input id="e_nombre" name="nombre" autocomplete="name" required><span class="err" id="e_nombre_err"></span></div>
             <div class="field"><label for="e_tel">Teléfono</label><input id="e_tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required><span class="err" id="e_tel_err"></span></div>
-            <div class="field full"><label for="e_email">Correo electrónico</label><input id="e_email" name="email" type="email" autocomplete="email" required><span class="err" id="e_email_err"></span></div>
-            <div class="field"><label for="e_personas">Personas que viajan</label>
-              <select id="e_personas" name="personas"><option>1–5</option><option>6–15</option><option>16–30</option><option>Más de 30</option></select></div>
-            <div class="field"><label for="e_frecuencia">Frecuencia de viaje</label>
-              <select id="e_frecuencia" name="frecuencia"><option>Varias veces por semana</option><option>Semanal</option><option>Mensual</option><option>Por temporada o calendario</option><option>Puntual</option></select></div>
-            <div class="field full"><label for="e_msg">Rutas habituales y lo que necesitáis</label><textarea id="e_msg" name="mensaje" required placeholder="Ej.: Tenerife Norte – Gran Canaria dos veces por semana, hotel una noche, factura mensual…"></textarea><span class="err" id="e_msg_err"></span></div>
-            <label class="check"><input type="checkbox" id="e_ok" name="privacidad" required><span>He leído la <a href="{{ site.baseurl }}/politica-de-privacidad/" target="_blank">política de privacidad</a> y acepto que Viajes Parque use estos datos para responder a mi consulta.</span></label>
+            <div class="field"><label for="e_email">Correo electrónico</label><input id="e_email" name="email" type="email" autocomplete="email" required><span class="err" id="e_email_err"></span></div>
+            <div class="field"><label for="e_tipo_viaje">Tipo de viaje</label>
+              <select id="e_tipo_viaje" name="tipo_viaje"><option>Trabajo</option><option>Curso</option><option>Equipo</option><option>Formación</option></select></div>
+            <div class="field"><label for="e_frecuencia">Frecuencia</label>
+              <select id="e_frecuencia" name="frecuencia"><option>Puntual</option><option>Recurrente</option></select></div>
+            <div class="field full"><label for="e_msg">¿Qué os resulta más pesado de organizar?</label><textarea id="e_msg" name="mensaje" placeholder="Ej.: los cambios de última hora, el barco con la furgoneta, cuadrar a los ponentes…"></textarea><span class="err" id="e_msg_err"></span></div>
+            <label class="check"><input type="checkbox" id="e_ok" name="privacidad" required><span>He leído la <a href="{{ site.baseurl }}/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a> y acepto que Viajes Parque use estos datos para responder a mi consulta.</span></label>
             <span class="err" id="e_ok_err"></span>
             {% include info-privacidad.html %}
             <input class="hp" type="text" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">

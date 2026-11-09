@@ -1,58 +1,70 @@
 ---
-title: "Viajes pensados para ti (y para los tuyos)"
-title_seo: "Viajes a medida, lunas de miel y cruceros"
+title: "Cuéntanos qué necesitas. El resto lo pensamos nosotros."
+title_seo: "Viajes a medida desde Tenerife"
 miga: "Particulares"
-description: "Paquetes a medida, vuelos y hoteles, tours guiados, asesoría, lunas de miel y cruceros desde Tenerife, con atención personal en Santa Cruz y Tegueste."
+description: "Te preguntamos, te aconsejamos y te proponemos el viaje que encaja contigo. Vacaciones, escapadas, cruceros y lunas de miel. Agencia en Santa Cruz y Tegueste."
 image: /img/fotos/luna-de-miel.webp
 migas:
   - titulo: "Experiencias"
     url: /experiencias/
 hero:
-  eyebrow: "Experiencias · Particulares"
-  texto: "Vacaciones en familia, lunas de miel, escapadas y aventuras. Tú pones las ganas; nosotros, la experiencia para que todo encaje."
+  eyebrow: "Experiencias · Viajes para ti"
+  texto: "No hace falta que llegues con las ideas claras. Muchos clientes vienen sin saber a dónde ir ni cuánto gastar. Para eso estamos: te preguntamos, te enseñamos opciones y te ayudamos a decidir."
   imagen: /img/fotos/luna-de-miel.webp
   alt: "Pareja al atardecer junto al mar"
 ---
 <section class="section">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Qué hacemos por ti</span>
-      <h2>Seis formas de ayudarte a viajar mejor</h2>
-      <p>Antes lo llamábamos “servicios”. Ahora preferimos contarte lo que vas a vivir.</p>
+      <span class="eyebrow">Viajes para ti</span>
+      <h2>Qué viajes preparamos</h2>
     </div>
     <div class="grid c3">
       {%- for e in site.data.experiencias_particulares %}
-      <a class="card reveal" href="#{{ e.id }}">{% include icono.html nombre=e.icono color=e.color %}<h3>{{ e.titulo }}</h3><p>{{ e.resumen }}</p><span class="tag">{{ e.clasico }}</span></a>
+      <div class="card reveal">{% include icono.html nombre=e.icono color=e.color %}<h3>{{ e.titulo }}</h3>{% if e.texto %}<p>{{ e.texto }}</p>{% endif %}</div>
       {%- endfor %}
     </div>
   </div>
 </section>
 
-{% for e in site.data.experiencias_particulares %}
-<section class="section{% cycle ' white', '' %}" id="{{ e.id }}">
-  <div class="wrap split{% cycle '', ' rev' %}">
-    <div class="split-media reveal"><img src="{{ e.imagen | relative_url }}" alt="{{ e.alt }}" loading="lazy"></div>
-    <div class="reveal">
-      <span class="eyebrow">{{ e.clasico }}</span>
-      <h2>{{ e.titulo }}</h2>
-      <p>{{ e.texto }}</p>
-      <ul class="checks">
-        {%- for punto in e.puntos %}
-        <li>{{ punto }}</li>
-        {%- endfor %}
-      </ul>
-      <a href="{{ site.baseurl }}/hablamos/?tipo=particular&amp;interes={{ e.id }}" class="btn">Quiero información<span class="sr-only"> sobre {{ e.titulo }}</span></a>
+<section class="section white">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Paso a paso</span>
+      <h2>Cómo lo hacemos</h2>
+    </div>
+    <div class="grid c4">
+      <div class="card reveal"><span class="step">1</span><h3>Hablamos.</h3><p>Qué buscas, con quién viajas, cuánto quieres gastar.</p></div>
+      <div class="card reveal"><span class="step">2</span><h3>Te proponemos.</h3><p>Opciones reales, no un listado interminable.</p></div>
+      <div class="card reveal"><span class="step">3</span><h3>Te aconsejamos.</h3><p>Te decimos qué merece la pena y qué no.</p></div>
+      <div class="card reveal"><span class="step">4</span><h3>Te acompañamos.</h3><p>Antes, durante y si hay algún cambio.</p></div>
     </div>
   </div>
 </section>
-{% endfor %}
+
+<section class="section">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Con números</span>
+      <h2>Cuándo merece la pena pagar un poco más</h2>
+      <p>A veces entras buscando un hotel baratísimo y, con un buen consejo, sales con uno bastante mejor por muy poca diferencia. No lo hacemos por vender más. Lo hacemos cuando de verdad compensa, y te lo enseñamos con números. Si no compensa, te lo decimos igual.</p>
+      <div class="callout">
+        <p><em>Alguien nos pidió un hotel para dos noches. Dimos por hecho que quería algo sencillo. Quería gastar mil euros. Quien no pregunta ofrece lo que se imagina. Quien pregunta acierta.</em></p>
+      </div>
+      <p><a href="{{ site.baseurl }}/diario-de-viaje/merece-la-pena-subir-de-hotel/">¿Merece la pena subir de hotel? Cuándo sí y cuándo no</a></p>
+    </div>
+    <div class="split-media reveal"><img src="{{ site.baseurl }}/img/fotos/hotel.webp" alt="Habitación de hotel con luz de atardecer" loading="lazy" width="1201" height="629"></div>
+  </div>
+</section>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"Experiencias para particulares","itemListElement":[
+{"@context":"https://schema.org","@type":"ItemList","name":"Viajes para particulares","itemListElement":[
 {%- for e in site.data.experiencias_particulares %}
-{"@type":"ListItem","position":{{ forloop.index }},"item":{"@type":"Service","name":{{ e.titulo | append: " (" | append: e.clasico | append: ")" | jsonify }},"description":{{ e.texto | jsonify }},"provider":{"@id":"{{ '/#agencia' | absolute_url }}"},"areaServed":"Islas Canarias"}}{% unless forloop.last %},{% endunless %}
+{"@type":"ListItem","position":{{ forloop.index }},"item":{"@type":"Service","name":{{ e.titulo | jsonify }},"description":{{ e.texto | default: e.titulo | jsonify }},"provider":{"@id":"{{ '/#agencia' | absolute_url }}"},"areaServed":"Islas Canarias"}}{% unless forloop.last %},{% endunless %}
 {%- endfor %}
 ]}
 </script>
 
-{% include cta.html titulo="¿Por dónde empezamos?" texto="Dinos destino (o ni eso), fechas aproximadas y con quién viajas. Con eso ya tenemos para empezar." %}
+{% include relacionados.html categorias="cruceros,agencia-o-internet,destinos" titulo="Antes de decidir, léete esto" %}
+
+{% include cta.html titulo="Cuéntanos tu viaje" texto="Destino o solo una idea, fechas aproximadas y con quién viajas. Con eso empezamos." url="/hablamos/?tipo=particular" %}

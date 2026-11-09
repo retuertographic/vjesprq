@@ -4,7 +4,7 @@ title_seo: "IA y trato personal en tu agencia de viajes"
 description: "Usamos inteligencia artificial y comparadores propios en el día a día de la agencia. Te contamos para qué sí y para qué no."
 resumen: "Usamos inteligencia artificial y comparadores propios en el día a día de la agencia. Te contamos para qué sí y para qué no."
 date: 2026-09-17 00:01:00 +0100
-categoria: novedades
+categoria: agencia-o-internet
 minutos: 4
 image: /img/fotos/hotel.webp
 ---

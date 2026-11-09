@@ -4,7 +4,7 @@ title_seo: "¿Agencia o reservar online? Qué compensa"
 description: "¿Agencia de viajes o reservar por internet? Cuándo compensa hacerlo por tu cuenta y cuándo una agencia local te ahorra dinero, tiempo y disgustos."
 resumen: "Reservar online parece más barato y más rápido. A veces lo es. Te contamos, sin rodeos, en qué casos compensa hacerlo tú y en cuáles te ahorras dinero y disgustos con una agencia."
 date: 2026-09-17 00:05:00 +0100
-categoria: antes-de-ir
+categoria: agencia-o-internet
 minutos: 6
 image: /img/fotos/tarjeta-embarque.webp
 ---
@@ -48,6 +48,17 @@ Las agencias trabajamos con mayoristas y proveedores con los que tenemos acuerdo
   </tbody>
 </table>
 </div>
+
+## Una agencia no es un portal: cuatro casos
+
+Un portal te enseña 4.000 hoteles. Una agencia te pregunta cuánto quieres gastar. La diferencia se nota justo cuando el viaje se sale de lo normal:
+
+1. **Preguntamos lo que tú no dices.** ¿Va cargado el furgón? ¿Cuánto quieres gastar de verdad? ¿Quién viaja y quién paga?
+1. **Un cambio, un minuto.** Tú sigues con tu trabajo. Nosotros movemos el billete.
+1. **Coordinamos a todos.** Quien organiza, quien viaja y quien paga rara vez quieren lo mismo. Nosotros lo cuadramos.
+1. **Conocemos lo que vendemos.** Qué autobús, qué recorrido, qué hotel. Como si ya hubieras estado ahí.
+
+Si viajas por trabajo, mira [cómo organizamos los viajes de empresa]({{ site.baseurl }}/experiencias/empresas/). Si es un viaje personal, te contamos [cómo preparamos tu viaje]({{ site.baseurl }}/experiencias/particulares/).
 
 ## Qué preguntar antes de contratar una agencia de viajes
 

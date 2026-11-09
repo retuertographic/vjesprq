@@ -10,6 +10,8 @@ image: /img/fotos/hotel.webp
 ---
 ## Cuando sí compensa
 
+La cuenta no es solo el precio por noche. Hay que mirar el viaje entero: lo que te ahorras, lo que ganas y lo que vas a disfrutar.
+
 - La diferencia de precio es pequeña frente al total del viaje.
 - El hotel barato está lejos de lo que vas a visitar y gastarás en taxis.
 - Viajas con niños o personas mayores y la comodidad cuenta.
@@ -20,6 +22,19 @@ image: /img/fotos/hotel.webp
 - Vas a pasar el día fuera y solo duermes.
 - La mejora es de servicios que no vas a usar.
 - El presupuesto es ajustado y se nota.
+
+## Un ejemplo con números
+
+Imagina un viaje de cuatro noches. El hotel mejor cuesta 20 euros más por noche: 80 euros sobre el total. Si está en el centro y te ahorra dos taxis al día, la diferencia casi desaparece. Si además tiene desayuno incluido y el otro no, puede que hasta salga más barato.
+
+Ahora imagina lo contrario: un hotel con spa y piscina que cuesta bastante más, para un viaje en el que vas a salir a primera hora y volver de noche. Ahí la mejora no la vas a ver.
+
+## Qué preguntarte antes de decidir
+
+- ¿Cuántas horas voy a pasar de verdad en el hotel?
+- ¿Dónde está respecto a lo que quiero ver o hacer?
+- ¿Qué incluye uno que no incluya el otro?
+- ¿Es un viaje que quiero recordar de una forma especial?
 
 ## Cómo lo hacemos nosotros
 

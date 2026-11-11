@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://retuertographic.github.io/vjesprq/sitemap.xml
+Sitemap: https://viajes.retuertographicdesign.com/sitemap.xml

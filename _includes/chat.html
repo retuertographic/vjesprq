@@ -1,0 +1,9 @@
+{%- comment -%}
+  Burbuja del asistente de chat (Tripilots), abajo a la izquierda. El src lo pone site-common.js al terminar de
+  cargar la página para no retrasarla. El chat avisa con postMessage al abrirse y cerrarse, pero solo a
+  https://www.viajesparque.com: allí el recuadro se reduce a la burbuja mientras está cerrado; en otros dominios
+  se queda en 300 × 600 px, como en la web original.
+{%- endcomment -%}
+<div class="chat-burbuja">
+  <iframe id="chatbot" data-src="https://sac.tripilots.com/parque" title="Chat de atención al cliente de Viajes Parque" width="300" height="600"></iframe>
+</div>

@@ -86,6 +86,19 @@ const BISCOTTI_WEBSITE_ID = '';
     else if (empty) empty.hidden = true;
   });
 
+  /* Chat de atención al cliente: se carga cuando la página ya está lista */
+  const chat = document.getElementById('chatbot');
+  if (chat) {
+    const cargar = () => { chat.src = chat.dataset.src; };
+    if (document.readyState === 'complete') cargar(); else window.addEventListener('load', cargar);
+    window.addEventListener('message', e => {
+      if (e.origin !== 'https://sac.tripilots.com' || e.source !== chat.contentWindow) return;
+      if (!e.data || e.data.type !== 'resize') return;
+      chat.parentElement.classList.add('compacto');
+      chat.parentElement.classList.toggle('abierto', !!e.data.open);
+    });
+  }
+
   /* Botones para compartir artículos */
   const shareEl = document.querySelector('[data-compartir]');
   if (shareEl) {
